@@ -1,6 +1,6 @@
 # NikoLen -  my personal page
 
-created with:
+Created with:
 
 - HTML
 - Sass / SCSS
@@ -10,5 +10,7 @@ Tools:
 
 - VS Code
 - Photoshop
-- Adobe XD
+- Adobe XD / Figma
 - NPM + Grunt
+
+final web: https://nikolen.cz
