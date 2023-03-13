@@ -1,0 +1,158 @@
+.menu-icon {
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0.9375em 1.5em;
+  cursor: pointer;
+  color: $color-primary;
+}
+
+.fa-chevron-circle-down {
+  font-size: 20px;
+}
+
+.menu-title {
+  padding-right: 0.2rem;
+  font-weight: 800;
+}
+
+
+.logo a {
+  background: url("https://nikolen.cz/assets/images/LN-logo.webp") top center no-repeat;
+  display: block;
+  background-size: contain;
+  position: absolute;
+  z-index: 1000;
+  top: -50px;
+  // border: 2px solid $color-dark;
+  // border-radius: 50%;
+  text-indent: -999px;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+  padding: 0.3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(white, 0.7);
+  padding: 1.2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+}
+
+nav ul {
+  max-height: 0px;
+   list-style: none;
+   text-align: center;
+   overflow: hidden;
+   padding: 0;
+   margin: 0;
+  transition: all 1s ease;
+ }
+
+nav ul li {
+  font-weight: 800;
+  padding: 1.5rem 0;
+}
+
+nav ul li a {
+  color: #181818;
+  text-decoration: none;
+}
+
+nav ul li a {
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: $color-primary;
+}
+
+nav ul li.active a {
+  color: $color-primary;
+}
+
+
+#menu-icon, ul.menu {
+  transition: all 1.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show {
+  max-height: 100vh;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+
+@media (min-width: 1200px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .logo a {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 0;
+  }
+
+
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 15.5em;
+    height: 100%;
+    padding: 1.2rem;
+    z-index: 1000;
+    transition: 1s;
+  //  background-color: transparent;
+  background-color: rgba(white, 0.4);
+  }
+
+
+  nav ul {
+    max-height: 100vh;
+  }
+
+  .menu {
+    text-align: left;
+  }
+
+
+  nav ul {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  nav ul li {
+    padding: 1.7rem 0;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+}
