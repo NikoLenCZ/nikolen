@@ -1,0 +1,11 @@
+.toolBox {
+  @apply text-violet-800 grid place-items-center;
+}
+
+.toolBox figcaption {
+  @apply mt-3;
+}
+
+.tool__image {
+  @apply w-12 h-12 lg:w-20 lg:h-20 fill-purple-950;
+}

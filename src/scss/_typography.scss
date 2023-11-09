@@ -1,0 +1,62 @@
+html {
+  font-family: 'Nunito', 'Tahoma', sans-serif;
+}
+
+html {
+  @apply antialiased scroll-smooth;
+}
+
+h1, .h1 {
+  @apply text-3xl mb-3 font-bold text-center;
+  @apply md:text-start;
+  @apply lg:text-6xl lg:mb-6;
+}
+
+h2, .h2 {
+  @apply text-3xl mb-3 font-bold text-center;
+  @apply lg:text-5xl lg:mt-6 lg:mb-16;
+}
+
+h3, .h3 {
+  @apply text-xl mb-3 font-bold text-center;
+  @apply lg:text-4xl lg:my-10;
+}
+
+p {
+  @apply text-base mb-3;
+  @apply lg:text-xl lg:my-8;
+}
+
+.active__link {
+  @apply font-bold text-violet-900 text-lg leading-7 md:leading-8 md:text-xl mt-2;
+}
+
+.active__link {
+  background-image: linear-gradient(0deg, #fdba74, #fdba74 100%);
+  background-position-y: calc(200% - 3px);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  transition: background-position-y 250ms ease 0s, background-size 250ms ease 0s, color 250ms ease 0s;
+}
+
+.active__link:hover {
+  background-position-y: 100%;
+  background-size: 100% 100%;
+  opacity: 1;
+  background-image: linear-gradient(0deg, #fdba74, #fdba74 100%);
+}
+
+.address__link > p {
+  background-image: linear-gradient(0deg, #fdba74, #fdba74 100%);
+  background-position-y: calc(200% - 3px);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  transition: background-position-y 250ms ease 0s, background-size 250ms ease 0s, color 250ms ease 0s;
+}
+
+.address__link:hover > p {
+  background-position-y: 100%;
+  background-size: 100% 100%;
+  opacity: 1;
+  background-image: linear-gradient(0deg, #fdba74, #fdba74 100%);
+}

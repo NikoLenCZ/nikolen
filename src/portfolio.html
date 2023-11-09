@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NikoLen - frontend portfolio</title>
+  <meta name="description"
+    content="Měla jsem možnost spolupracovat jak na velkých webech, tak i tvořit větší i jednoduché
+    webové prezentace. Kóduji i menší projekty a aplikace v rámci sebevzdělávání, mentoringu, kurzů a načerpané inspirace. Najdete zde několik mých projektů, které jsem vytvořila nebo na kterých jsem se podílela." />
+
+  <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-title" content="https://nikolen.cz/portfolio">
+  <meta name="application-name" content="https://nikolen.cz/portfolio">
+  <link rel="canonical" href="https://nikolen.cz/portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nikolen.cz/img/og-image.png">
+  <meta property="og:title" content="NikoLen - frontend portfolio">
+  <meta property="og:description" lang="cs"
+    content="Měla jsem možnost spolupracovat jak na velkých webech, tak i tvořit větší i jednoduché
+      webové prezentace. Kóduji i menší projekty a aplikace v rámci sebevzdělávání, mentoringu, kurzů a načerpané inspirace. Najdete zde několik mých projektů, které jsem vytvořila nebo na kterých jsem se podílela.">
+  <meta property="og:url" content="https://nikolen.cz/portfolio">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nikolen.cz/portfolio">
+  <meta property="twitter:title" content="NikoLen - frontend portfolio">
+  <meta property="twitter:description" lang="cs"
+    content="Měla jsem možnost spolupracovat jak na velkých webech, tak i tvořit větší i jednoduché
+      webové prezentace. Kóduji i menší projekty a aplikace v rámci sebevzdělávání, mentoringu, kurzů a načerpané inspirace. Najdete zde několik mých projektů, které jsem vytvořila nebo na kterých jsem se podílela.">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#4d267c">
+  <meta name="msapplication-TileColor" content="#4d267c">
+  <meta name="theme-color" content="#4d267c">
+
+  <script type="module" src="/js/index.js" defer></script>
+
+</head>
+
+<body>
+  <!-- HEADER WITH NAVIGATION -->
+  <header class="w-full max-w-screen-1920 1920:mx-auto">
+    <nav class="relative items-center justify-center md:flex md:h-32 navigation">
+      <div class="flex items-center justify-between p-2 nav-header md:justify-center">
+        <!-- MENU ICON -->
+        <div class="z-50 order-2 cursor-pointer navbar-icon md:hidden text-violet-800">
+          <svg id="icon-menu"
+            class="w-2 rotate-90 fill-violet-700 h-2 inline-block transition-transform duration-[400ms] ease-linear">
+            <use xlink:href="/img/InlineSprite.svg#ico-double-arrow"></use>
+          </svg>
+          <span class="text-xs font-bold menu-title ">MENU</span>
+        </div>
+        <!-- / MENU ICON -->
+        <!-- LOGO -->
+        <div class="z-20 order-1 md:absolute logo">
+          <a class="" href="index.html">
+            <img
+              class="w-12 h-12 aspect-square transition-all duration-200 ease-in hover:drop-shadow-[0_3px_3px_rgba(170,26,213,0.43)] shadow-violet-800 lg:w-full lg:h-auto"
+              src="/img/LN-logo.webp" alt="logo">
+          </a>
+        </div>
+        <!-- / LOGO -->
+      </div>
+      <!-- MENU LIST -->
+      <ul class="navList">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutMe">O mně</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/timeline.html">Timeline</a>
+        </li>
+        <li class="nav__item md:mr-[6rem] lg:mr-[18rem]">
+          <a class="nav__link" href="/index.html#courses">Vzdělávání</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#tools">Technologie</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#contact">Kontakt</a>
+        </li>
+      </ul>
+      <!-- / MENU LIST -->
+    </nav>
+
+
+    <div class="max-w-[60rem] px-4 mx-auto mt-16 lg:mt-24 mb-6">
+      <h1 class="my-0 mb-8 text-3xl h2">
+        Frontend portfolio
+      </h1>
+      <p class="text-center">Měla jsem možnost spolupracovat jak na velkých webech, tak i tvořit větší i jednoduché
+        webové prezentace. Kóduji i menší projekty a aplikace v rámci sebevzdělávání, mentoringu, kurzů a načerpané
+        inspirace. Níže
+        najdete
+        několik mých projektů, které jsem vytvořila nebo na kterých jsem se podílela.
+      </p>
+    </div>
+
+  </header>
+  <!-- / HEADER WITH NAVIGATION -->
+  <main class="w-full max-w-screen-1920 1920:mx-auto" id="top">
+    <section class="px-0" id="myWork">
+      <h2 class="invisible w-0 absolute -top-full h-0 m-0 indent-[999px]">
+        Frontend projekty do portfolia
+      </h2>
+
+
+      <!-- PROJECT SECTION -->
+      <article class="card card--reverse">
+
+        <img class="card__image"
+          srcset="/img/reactapp-450.webp 450w, /img/reactapp-650.webp 650w, /img/reactapp-850.webp 850w, /img/reactapp-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/reactapp-1000.webp" width="1000" height="1000" alt="react aplikace" />
+
+        <!-- <img class="card__image" src="/img/reactapp-work.webp" alt="react aplikace"> -->
+
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              React aplikace napojená na openAI API
+            </h1>
+          </header>
+          <section class="card__section">
+            <p>🧭 Závěrečný projekt v rámci intenzivní React akademie.</p>
+            <p class="card__text">
+              Webová aplikace je vytvořena za pomocí knihovny <strong>React</strong> a propojená s <strong>OpenAI
+                API</strong>.
+              Má textové pole, do kterého se vkládá kód a s využitím OpenAI dostaneme vysvětlení toho, co kód
+              dělá.
+              Pod ním je input pro <strong>vložení vlastního API klíče</strong>, nutný pro request - bez něj výsledek
+              nedostanete.
+            </p>
+            <h2 class="mb-2 text-lg text-left md:text-xl">
+              🛠️ Co jsem si vyzkoušela:
+            </h2>
+            <ul class="mb-4 list-disc list-inside marker:text-orange-400 lg:mb-6">
+              <li>vytvoření nové react aplikace přes Vite</li>
+              <li>tvorba komponent a jejich použití v aplikaci</li>
+              <li>použít props</li>
+              <li>využití hooku useState</li>
+              <li>využití hooku useEffect</li>
+              <li>napojení na OpenAI API</li>
+              <li>deploy Vite react aplikace</li>
+            </ul>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">React</li>
+              <li class="labels__item labels__item--orange">JSX</li>
+              <li class="labels__item labels__item--orange">Tailwind</li>
+              <li class="labels__item labels__item--orange">Vite</li>
+              <li class="labels__item labels__item--orange">OpenAI API</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="https://nikolencz.github.io/explain-code-app/">Explain my code app
+                  live</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/explain-code-app">Explain my code app -
+                  Github repozitář</a></li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card">
+        <img class="card__image"
+          srcset="/img/reactakademie-450.webp 450w, /img/reactakademie-650.webp 650w, /img/reactakademie-850.webp 850w, /img/reactakademie-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/reactakademie-1000.webp" width="1000" height="1000" alt="React akademie" loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              React akademie
+            </h1>
+          </header>
+          <section class="card__section">
+            <p>🧭 Základy Reactu</p>
+            <p class="card__text">
+              Repozitář pro intenzivní kurz React Akademie od komunity React Girls. Aplikace vytvořená s Create React
+              App a nastylovaná s Tailwind CSS.
+            </p>
+            <h2 class="mb-2 text-lg text-left md:text-xl">
+              🛠️ Co jsem si vyzkoušela:
+            </h2>
+            <ul class="mb-4 list-disc list-inside marker:text-orange-400 lg:mb-6">
+              <li>vytvořit komponentu a použít ji ve své aplikaci</li>
+              <li>použít metodu .map()</li>
+              <li>použít props</li>
+              <li>využití hooku useState</li>
+              <li>využití hooku useEffect</li>
+              <li>stylování komponent pomocí Tailwindu</li>
+              <li>deploy React aplikace</li>
+            </ul>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">React</li>
+              <li class="labels__item labels__item--orange">JSX</li>
+              <li class="labels__item labels__item--orange">Tailwind</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="https://nikolencz.github.io/react-academy/">React akademie
+                  live</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/react-academy">React akademie -
+                  Github repozitář</a></li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card card--reverse">
+        <img class="card__image"
+          srcset="/img/todojs-450.webp 450w, /img/todojs-650.webp 650w, /img/todojs-850.webp 850w, /img/todojs-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/todojs-1000.webp" width="1000" height="1000" alt="to-do aplikace v JavaScriptu" loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Jednoduchý todo list v JavaScriptu
+            </h1>
+          </header>
+          <section class="card__section">
+            <p class="card__text">Chtěla jsem si vytvořit jednoduchý to-do list úkolů a osvěžit si
+              <strong>základy
+                JavaSciptu</strong>. Časem budou krok po kroku přibývat nové funkcionality.
+            </p>
+            <h2 class="mb-2 text-lg text-left md:text-xl">
+              🛠️ Co jsem si vyzkoušela:
+            </h2>
+            <ul class="mb-4 list-disc list-inside marker:text-orange-400 lg:mb-6">
+              <li>nastavení aktuálního data a času s refreshem po vteřinách</li>
+              <li>cyklus for / forEach</li>
+              <li>addEventListener</li>
+              <li>vytvoření HTML elementů v JS a zápis řetězců</li>
+              <li>práce s proměnnými v rámci řetězců</li>
+              <li>Openprops</li>
+            </ul>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">Open Props</li>
+              <li class="labels__item labels__item--orange">CSS</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="https://nikolencz.github.io/ToDo-list/">ToDo list live</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/ToDo-list">ToDo list -
+                  Github repozitář</a></li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card">
+        <img class="card__image"
+          srcset="/img/naslovicko-450.webp 450w, /img/naslovicko-650.webp 650w, /img/naslovicko-850.webp 850w, /img/naslovicko-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/naslovicko-1000.webp" width="1000" height="1000" alt="hra Na Slovíčko - klon hry Wordle"
+          loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Na slovíčko - klon hry Worlde
+            </h1>
+          </header>
+          <section class="card__section">
+            <p class="card__text">Klon hry Wordle, vytvořené pro studijní účely v rámci <a
+                href="https://www.youtube.com/watch?v=x-KXrkrM9D4">kurzu
+                programování v JavaScriptu</a>
+              od Yablka. Kód jsem si <strong>upravila dle svého</strong> a přidala pár drobností. Časem budu přidávat
+              nové funkcionality
+              a vychytávky.</p>
+            <h2 class="mb-2 text-lg text-left md:text-xl">
+              🛠️ Co jsem si vyzkoušela:
+            </h2>
+            <ul class="mb-4 list-disc list-inside marker:text-orange-400 lg:mb-6">
+              <li>opáčko funkcí a addEventListener</li>
+              <li>HTML dialog element</li>
+              <li>Lottie Files animationsr</li>
+              <li>CSS animace</li>
+            </ul>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">CSS</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+              <li class="labels__item labels__item--orange">LottieFiles</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="hhttps://nikolencz.github.io/naslovicko/">Na slovíčko live</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/naslovicko">Na slovíčko -
+                  Github repozitář</a></li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card card--reverse">
+        <img class="card__image"
+          srcset="/img/digilab-450.webp 450w, /img/digilab-650.webp 650w, /img/digilab-850.webp 850w, /img/digilab-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/digilab-1000.webp" width="1000" height="1000" alt="Landing page - výběrové řízení Digilab"
+          loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Landing page dle grafického návrhu
+            </h1>
+          </header>
+          <section class="card__section">
+            <p>🧭 úkol v rámci výběrového řízení</p>
+            <p class="card__text">Úkol v rámci výběrového řízení na pozici kodéra. Zkušební landing page na základě
+              grafického desingu ve Figmě.</p>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">CSS</li>
+              <li class="labels__item labels__item--orange">Tailwind</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+              <li class="labels__item labels__item--orange">Splide JS</li>
+              <li class="labels__item labels__item--orange">Figma</li>
+              <li class="labels__item labels__item--orange">Grunt JS</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="https://nikolencz.github.io/tailwind-digilab/public/">Stránka pro
+                  Digilab
+                  live</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/tailwind-digilab">Stránka pro Digilab -
+                  Github repozitář</a></li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card">
+        <img class="card__image"
+          srcset="/img/vodotop-450.webp 450w, /img/vodotop-650.webp 650w, /img/vodotop-850.webp 850w, /img/vodotop-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/vodotop-1000.webp" width="1000" height="1000" alt="webová prezentace vodotop" loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Webová prezentace firmy Vodotop
+            </h1>
+          </header>
+          <section class="card__section">
+            <p class="card__text">Cílem bylo vytvořit jednoduchou, přehlednou a <strong>reprezentativní webovou
+                prezentaci</strong>
+              firmy a dát potenciálnímu zákazníkovi základní informace o službách a produktech. Do budoucna
+              přibyde
+              galerie realizace prací. Nakódovala jsem je dle mého vlastního grafického návrhu a přidala i
+              základní
+              nastavení <strong>SEO</strong>.</p>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">SCSS</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+              <li class="labels__item labels__item--orange">Figma</li>
+              <li class="labels__item labels__item--orange">Photoshop</li>
+              <li class="labels__item labels__item--orange">Grunt JS</li>
+              <li class="labels__item labels__item--orange">SEO</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li><a class="active__link" href="https://vodotop-topeni.cz">vodotop-topeni.cz</a></li>
+              <li><a class="active__link" href="https://github.com/NikoLenCZ/Vodotop">Vodotop - Github repozitář</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card card--reverse">
+        <img class="card__image"
+          srcset="/img/jdmotor-450.webp 450w, /img/jdmotor-650.webp 650w, /img/jdmotor-850.webp 850w, /img/jdmotor-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/jdmotor-1000.webp" width="1000" height="1000" alt="webová prezentace firmy JDmotoR" loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Webová prezentace firmy JDmotoR
+            </h1>
+          </header>
+          <section class="card__section">
+            <p class="card__text"><strong>Kompletní redesign</strong> webových stránek, které se nyní dokáží zobrazit
+              responzivně
+              na všech zařízeních. Nakódovala jsem je podle mého vlastního grafického návrhu a přidala i základní
+              nastavení <strong>SEO</strong>.</p>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">SCSS</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+              <li class="labels__item labels__item--orange">jQuery</li>
+              <li class="labels__item labels__item--orange">Adobe XD</li>
+              <li class="labels__item labels__item--orange">Photoshop</li>
+              <li class="labels__item labels__item--orange">Grunt JS</li>
+              <li class="labels__item labels__item--orange">SEO</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li>
+                <a class="active__link" href="https://jdmotor.cz">jdmotor.cz</a>
+              </li>
+              <li>
+                <a class="active__link" href="https://github.com/NikoLenCZ/JDmotoR">JDmotoR - Github repozitář</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+      <!-- PROJECT SECTION -->
+      <article class="card">
+        <img class="card__image"
+          srcset="/img/tmobile-450.webp 450w, /img/tmobile-650.webp 650w, /img/tmobile-850.webp 850w, /img/tmobile-1000.webp 1000w"
+          sizes="(max-width: 450px) 450px, (max-width: 650px) 650px, (max-width: 850px) 850px, (min-width: 851px) 1000px"
+          src="/img/tmobile-1000.webp" width="1000" height="1000" alt="screen stránky výhodného telefonu t-mobile"
+          loading="lazy">
+        <article class="card__inner">
+          <header>
+            <h1 class="card__title">
+              Spolupráce s T‑mobile
+            </h1>
+          </header>
+          <section class="card__section">
+            <p class="card__text">Na svém kontě mám tři roky zkušeností s prací na zajímavých projektech v
+              T‑Mobile. Správa webu, <strong>kódování, front-endové technologie, dynamicky načítané webové
+                stránky</strong>,
+              personalizace obsahu nebo základní vhled do světa <strong>SEO</strong>. A to je jen špička ledovce.</p>
+            <ul class="labels">
+              <li class="labels__item labels__item--orange">HTML</li>
+              <li class="labels__item labels__item--orange">CSS</li>
+              <li class="labels__item labels__item--orange">JavaScript</li>
+              <li class="labels__item labels__item--orange">jQuery</li>
+              <li class="labels__item labels__item--orange">Adobe XD</li>
+              <li class="labels__item labels__item--orange">Liferay</li>
+              <li class="labels__item labels__item--orange">SEO</li>
+            </ul>
+          </section>
+          <footer>
+            <ul class="card__footer__list">
+              <li>
+                <a class="active__link" href="https://t-mobile.cz">t-mobile.cz</a>
+              </li>
+            </ul>
+          </footer>
+        </article>
+      </article>
+      <!-- / PROJECT SECTION -->
+
+    </section>
+
+    <!-- /SECTION WITH TABS - MY PROJECTS -->
+
+    <!-- SECTION WITH CONTACT FORM -->
+    <section class="px-4 md:px-0" id="contact">
+      <h2>
+        Napište mi
+      </h2>
+      <p class="text-lg text-center text-gray-900 md:text-xl">
+        Máte zájem o spolupráci nebo jen dotaz? <br>
+      </p>
+
+      <div class="max-w-[45rem] mx-auto">
+        <div class="grid justify-center md:grid-cols-2">
+          <a class="flex items-center gap-4 my-5 address__link max-h-12" href="mailto:web@nikolen.cz">
+            <svg class="w-10 h-10 fill-orange-500">
+              <use xlink:href="/img/InlineSprite.svg#at-bold"></use>
+            </svg>
+            <p class="m-0">E-mail je osvědčená klasika</p>
+          </a>
+          <a class="flex items-center gap-4 my-5 address__link max-h-12" href="https://www.linkedin.com/in/nikolen/">
+            <svg class="w-10 h-auto fill-orange-500">
+              <use xlink:href="/img/InlineSprite.svg#linkedin"></use>
+            </svg>
+            <p class="m-0">Spojte se se mnou na LinkedIn</p>
+          </a>
+        </div>
+        <p class="mb-10 text-lg text-center text-gray-900 md:text-xl">Nebo vyplňte formulář níže a&nbsp;já se
+          s&nbsp;vámi
+          co&nbsp;nejdříve spojím 😊</p>
+
+        <p hidden class="result" id="result"></p>
+
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="be2edc9d-52f6-4b7c-aba0-7d445df94af5" />
+          <input type="hidden" name="from_name" value="Web3Forms - NikoLen">
+          <input type="hidden" name="subject" value="Nová zpráva z formuláře Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="flex flex-col gap-5 my-5 mb-6 sm:flex-row sm:gap-7 ">
+            <div class="w-full md:w-1/2">
+              <label for="name" class="block px-1 mb-2 text-sm text-gray-900">Jméno</label>
+              <input type="text" name="name" id="name" placeholder="Jarda Polívka" required class="form__input" />
+              <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
+                Prosím vyplňte Vaše jméno
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <label for="email" class="block px-1 mb-2 text-sm text-gray-900">Email</label>
+              <input type="email" name="email" id="email" placeholder="napriklad@email.cz" required
+                class="form__input" />
+              <div class="mt-1 text-sm font-bold text-red-500 empty-feedback">
+                Zadejte váš email
+              </div>
+              <div class="mt-1 text-sm font-bold text-red-500 invalid-feedback">
+                Zadejte platný email
+              </div>
+            </div>
+          </div>
+          <div class="my-5 mb-6">
+            <label for="message" class="block px-1 mb-2 text-sm text-gray-900">Zpráva</label>
+            <textarea rows="5" name="message" id="message" placeholder="Prosím vyplňte co máte na srdci"
+              class="form__input" required></textarea>
+            <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
+              Zadejte text zprávy
+            </div>
+            <!-- <! -- Step 1: Add this line -->
+            <div class="h-captcha" data-hl="cs" data-captcha="true"></div>
+
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="button button--primary">
+              Odeslat zprávu
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+    </section>
+    <!-- /SECTION WITH CONTACT FORM -->
+  </main>
+  <footer class="main__footer">
+    <p class="main__footer__text">
+      &copy;&nbsp;Lenka Nikodýmová 2023
+      <a class="main__footer__link" href="mailto:web@nikolen.cz">web@nikolen.cz</a>
+    </p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+// :root {
+//   /* CONTAINER - Change placeholders */
+//   --cont-max-w: 1920px;
+//   --cont-px: 1rem;
+// }
+
+// @media screen and (min-width: #{theme('screens.large')}) {
+//   :root {
+//       /* HERE GO VALUES FOR LARGE SCREENS if needed*/
+//       --cont-px: 0px;
+//       --innercont-w: 83.333333%;
+//       --innercont-px: 9.43332%;
+//   }
+// }
+
+html {
+  @apply h-full;
+}
+
+body {
+  @apply min-h-full flex flex-col;
+}
+
+// .cs-container {
+//   @apply mx-auto max-w-[var(--cont-max-w)] ;
+//  }
+
+// .cs-container {
+//  @apply mx-auto max-w-[var(--cont-max-w)] px-[var(--cont-px)];
+// }
+
+// .cs-container {
+//   @apply max-w-full mx-auto px-4;
+//   @apply md:max-w-2xl;
+//   @apply lg:max-w-3xl;
+//   @apply xl:max-w-5xl;
+// }
+
+
+
+
+
+
+section:not(article *, #bc) {
+  @apply py-10;
+  @apply md:py-12;
+  @apply lg:py-14;
+}
+
+// section:not(article *, #myWork, .timeline__section, #courses) {
+//   @apply px-[var(--cont-px)];
+// }

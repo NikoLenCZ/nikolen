@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NikoLen - frontend kodérka</title>
+  <meta name="description"
+    content="Jsem frontend kodérka, web developerka, bývalá web adminka a aspirující Reacťačka. Mám za sebou spolupráci s agenturou, několik spuštěných webovek na míru a tříletou zkušenost s velkou firmou T‑mobile. Neustále se vzdělávám a sleduji novinky ve frontendových technologiích." />
+  <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-title" content="https://nikolen.cz">
+  <meta name="application-name" content="https://nikolen.cz">
+  <link rel="canonical" href="https://nikolen.cz">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nikolen.cz/img/og-image.png">
+  <meta property="og:title" content="NikoLen - frontend kodérka">
+  <meta property="og:description" lang="cs"
+    content="Jsem frontend kodérka, web developerka, bývalá web adminka a aspirující Reacťačka. Mám za sebou spolupráci s agenturou, několik spuštěných webovek na míru a tříletou zkušenost s velkou firmou T‑mobile. Neustále se vzdělávám a sleduji novinky ve frontendových technologiích.">
+  <meta property="og:url" content="https://nikolen.cz">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nikolen.cz">
+  <meta property="twitter:title" content="NikoLen - frontend kodérka">
+  <meta property="twitter:description" lang="cs"
+    content="Jsem frontend kodérka, web developerka, bývalá web adminka a aspirující Reacťačka. Mám za sebou spolupráci s agenturou, několik spuštěných webovek na míru a tříletou zkušenost s velkou firmou T‑mobile. Neustále se vzdělávám a sleduji novinky ve frontendových technologiích.">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+  <link rel="manifest" href="./icons/site.webmanifest">
+  <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#4d267c">
+  <meta name="msapplication-TileColor" content="#4d267c">
+  <meta name="theme-color" content="#4d267c">
+  <script type="module" src="./js/index.js" defer></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</head>
+
+<body>
+  <!-- HEADER WITH NAVIGATION -->
+  <header class="w-full max-w-screen-1920 1920:mx-auto">
+    <nav class="relative items-center justify-center md:flex md:h-32 navigation">
+      <div class="flex items-center justify-between p-2 nav-header md:justify-center">
+        <!-- MENU ICON -->
+        <div class="z-50 order-2 cursor-pointer navbar-icon md:hidden text-violet-800">
+          <svg id="icon-menu"
+            class="w-2 rotate-90 fill-violet-700 h-2 inline-block transition-transform duration-[400ms] ease-linear">
+            <use xlink:href="/img/InlineSprite.svg#ico-double-arrow"></use>
+          </svg>
+          <span class="text-xs font-bold menu-title ">MENU</span>
+        </div>
+        <!-- / MENU ICON -->
+        <!-- LOGO -->
+        <div class="z-20 order-1 md:absolute logo">
+          <a class="" href="#top">
+            <img
+              class="w-12 h-12 aspect-square transition-all duration-200 ease-in hover:drop-shadow-[0_3px_3px_rgba(170,26,213,0.43)] shadow-violet-800 lg:w-full lg:h-auto"
+              src="/img/LN-logo.webp" alt="logo">
+          </a>
+        </div>
+        <!-- / LOGO -->
+      </div>
+      <!-- MENU LIST -->
+      <ul class="navList">
+        <li class="nav__item">
+          <a class="nav__link" href="#aboutMe">O mně</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./timeline.html">Timeline</a>
+        </li>
+        <li class="nav__item md:mr-[6rem] lg:mr-[18rem]">
+          <a class="nav__link" href="#courses">Vzdělávání</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#tools">Technologie</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">Kontakt</a>
+        </li>
+      </ul>
+      <!-- / MENU LIST -->
+    </nav>
+  </header>
+  <!-- / HEADER WITH NAVIGATION -->
+  <main class="w-full 1920:mx-auto max-w-screen-1920" id="top">
+    <!-- MAIN BANNER WITH MAIN PICTURE AND INTRO TEXT -->
+    <section id="bc">
+      <div class="grid items-center gap-6 py-12 md:grid-cols-2 lg:gap-24 place-items-start lg:place-items-start">
+        <img
+          class="lg:justify-self-end justify-self-center 2xl:mr-12 drop-shadow-[0_10px_10px_rgba(0,0,0,0.43)] w-[477px] h-auto"
+          src="/img/main.webp" alt="Lenka Nikodýmová" class="main-image">
+        <div class="flex flex-col justify-center xl:max-w-[40rem] px-4 md:px-0">
+          <h1 class="order-2 my-0 mb-8 text-3xl italic h2 md:text-start">
+            Frontend kodérka
+          </h1>
+          <h2 class="order-1 h1">Lenka Nikodýmová</h2>
+          <p class="order-3 md:pr-20">
+            Jsem frontend kodérka, web developerka, bývalá web adminka a&nbsp;aspirující Reacťačka. Mám za&nbsp;sebou
+            spolupráci s&nbsp;agenturou, několik spuštěných webovek na míru a&nbsp;tříletou zkušenost s&nbsp;velkou
+            firmou T‑mobile.
+            Neustále se
+            vzdělávám a&nbsp;sleduji novinky ve frontendových technologiích.
+          </p>
+        </div>
+      </div>
+      <!-- / MAIN BANNER WITH MAIN PICTURE AND INTRO TEXT -->
+      <!-- COUNTER IN MAIN BANNER SECTION -->
+      <div
+        class="grid mt-5 place-items-center main-content sm:grid-cols-2 md:grid-cols-4 xl:max-w-screen-largest xl:mx-auto">
+        <div class=" counterBox">
+          <svg class="counter__image">
+            <use xlink:href="/img/InlineSprite.svg#ico-path"></use>
+          </svg>
+          <p class="counter__number">
+            <span data-from="0" data-to="3" class="count__it">0</span> +
+          </p>
+          <p class="counter__title">Roky zkušeností</p>
+        </div>
+        <div class="counterBox">
+          <svg class="counter__image">
+            <use xlink:href="/img/InlineSprite.svg#ico-dart"></use>
+          </svg>
+          <p class="counter__number">
+            <span data-from="0" data-to="40" class="count__it">0</span> +
+          </p>
+          <p class="counter__title">Landing pages</p>
+        </div>
+        <div class="counterBox">
+          <svg class="counter__image">
+            <use xlink:href="/img/InlineSprite.svg#ico-devices"></use>
+          </svg>
+          <p class="counter__number"><span data-from="0" data-to="230" class="count__it">0</span> +</p>
+          <p class="counter__title">Upravených stránek</p>
+        </div>
+        <div class="counterBox">
+          <svg class="counter__image">
+            <use xlink:href="/img/InlineSprite.svg#ico-coffe"></use>
+          </svg>
+          <p class="counter__number"><span data-from="0" data-to="2400" class="count__it">0</span> +</p>
+          <p class="counter__title">Cups Of Coffee</p>
+        </div>
+      </div>
+      <!-- / COUNTER IN MAIN BANNER SECTION -->
+    </section>
+    <!-- TOOLS AND TECHNOLOGIES SECTION -->
+    <section class="" id="tools">
+      <h2 class="">Nástroje a technologie</h2>
+      <!-- TECHNOLOGIES GRID -->
+      <div
+        class="grid w-full grid-cols-3 gap-4 text-center md:mx-auto place-items-center md:grid-cols-7 mb-9 md:w-max md:gap-9">
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#html5"></use>
+          </svg>
+          <figcaption>HTML5</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#css3"></use>
+          </svg>
+          <figcaption>CSS3</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#sass"></use>
+          </svg>
+          <figcaption>Sass</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#tailwind"></use>
+          </svg>
+          <figcaption>Tailwind</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#bootstrap"></use>
+          </svg>
+          <figcaption>Bootstrap</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#javascript"></use>
+          </svg>
+          <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#react"></use>
+          </svg>
+          <figcaption>React JS</figcaption>
+        </figure>
+      </div>
+      <!-- / TECHNOLOGIES GRID -->
+      <!-- TOOLS GRID -->
+      <div
+        class="grid w-full grid-cols-3 gap-4 text-center md:mx-auto place-items-center md:grid-cols-6 md:w-max md:gap-9">
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#vscode"></use>
+          </svg>
+          <figcaption>VS Code</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#git"></use>
+          </svg>
+          <figcaption>Git</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#github"></use>
+          </svg>
+          <figcaption>Github</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#grunt"></use>
+          </svg>
+          <figcaption>Grunt JS</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#vite"></use>
+          </svg>
+          <figcaption>Vite</figcaption>
+        </figure>
+        <figure class="toolBox">
+          <svg class="tool__image">
+            <use xlink:href="/img/InlineSprite.svg#figma"></use>
+          </svg>
+          <figcaption>Figma</figcaption>
+        </figure>
+      </div>
+      <!-- / TOOLS GRID -->
+    </section>
+    <!-- / TOOLS AND TECHNOLOGIES SECTION -->
+    <!-- SECTION WITH TABS - MY PROJECTS -->
+    <section class="px-0" id="myWork">
+      <h2 id="tabs-title">
+        Frontend projekty a spolupráce
+      </h2>
+      <div class="tabs-container">
+        <ul aria-labelledby="tabs-title" class=" tabs-list">
+          <li class="w-full"><a id="tab-1" href="#webs">Weby</a></li>
+          <li class="w-full"><a id=" tab-2" href="#projects">Projekty</a></li>
+        </ul>
+
+        <div class="tabs-panels">
+          <div id="webs" aria-labelledby="tab-1" class="tab-panel">
+            <h3 class="italic">Weby a webové stránky</h3>
+            <p class="max-w-5xl px-4 mx-auto text-center">Mám za sebou několik spuštěných statických webů
+              a&nbsp;nespočet
+              upravených
+              firemních stránek. <br class="hidden md:block">
+              S&nbsp;každým novým projektem přichází nová výzva a&nbsp;další nové zkušenosti.</p>
+            <div class="tab__cards__wrapper">
+
+              <!-- / PROJECT SECTION -->
+              <!-- PROJECT SECTION -->
+              <article class="card">
+                <img class="card__image card__image--small" src="/img/vodotop-450.webp" alt="webová prezentace vodotop"
+                  loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      Webová prezentace firmy Vodotop
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p class="card__text">Cílem bylo vytvořit jednoduchou, přehlednou a <strong>reprezentativní webovou
+                        prezentaci</strong>
+                      firmy a dát potenciálnímu zákazníkovi základní informace o službách a produktech. Do budoucna
+                      plánujeme s klientem přidat fotogalerii realizace prací. Nakódovala jsem je dle mého vlastního
+                      grafického
+                      návrhu a přidala i
+                      základní
+                      nastavení <strong>SEO</strong>.</p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">Figma</li>
+                      <li class="labels__item labels__item--orange">Photoshop</li>
+                      <li class="labels__item labels__item--orange">Grunt JS</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li><a class="active__link" href="https://vodotop-topeni.cz">vodotop-topeni.cz</a></li>
+                      <li><a class="active__link" href="https://github.com/NikoLenCZ/Vodotop">Vodotop - Github
+                          repozitář</a>
+                      </li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <!-- / PROJECT SECTION -->
+              <!-- PROJECT SECTION -->
+              <article class="card card--reverse">
+                <img class="card__image card__image--small" src="/img/jdmotor-450.webp"
+                  alt="Webová prezentace firmy JDmotoR" loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      Webová prezentace firmy JDmotoR
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p class="card__text"><strong>Kompletní redesign</strong> webových stránek, které se nyní dokáží
+                      zobrazit responzivně
+                      na všech zařízeních. Nakódovala jsem je podle mého vlastního grafického návrhu a přidala i
+                      základní
+                      nastavení <strong>SEO</strong>.</p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">jQuery</li>
+                      <li class="labels__item labels__item--orange">Adobe XD</li>
+                      <li class="labels__item labels__item--orange">Photoshop</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li>
+                        <a class="active__link" href="https://jdmotor.cz">jdmotor.cz</a>
+                      </li>
+                      <li>
+                        <a class="active__link" href="https://github.com/NikoLenCZ/JDmotoR">JDmotoR - Github
+                          repozitář</a>
+                      </li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <article class="card">
+                <img class="card__image card__image--small" src="/img/tmobile-450.webp"
+                  alt="screen stránky výhodného telefonu t-mobile" loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      Spolupráce s T‑mobile
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p class="card__text">Na svém kontě mám tři roky zkušeností s prací na zajímavých projektech v
+                      T‑Mobile. Správa webu, <strong>kódování, front-endové technologie, dynamicky načítané webové
+                        stránky</strong>,
+                      personalizace obsahu nebo základní vhled do světa <strong>SEO</strong>. A to je jen špička
+                      ledovce.</p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">jQuery</li>
+                      <li class="labels__item labels__item--orange">Adobe XD</li>
+                      <li class="labels__item labels__item--orange">Liferay</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li>
+                        <a class="active__link" href="https://t-mobile.cz">t-mobile.cz</a>
+                      </li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <!-- / PROJECT SECTION -->
+            </div>
+          </div>
+          <div id="projects" aria-labelledby="tab-2" class="tab-panel">
+            <h3 class="italic">Projekty a aplikace</h3>
+            <p class="max-w-5xl px-4 mx-auto text-center">Projekty vytvořené v rámci sebevzdělávání, mentoringu, kurzů a
+              načerpané inspirace.
+              <br class="hidden md:block"> Baví mě zkoušet si a učit se nové frontendové věci a vychytávky.
+            </p>
+            <div class="tab__cards__wrapper">
+              <!-- PROJECT SECTION -->
+              <article class="card">
+                <img class="card__image card__image--small" src="/img/reactapp-450.webp"
+                  alt="react aplikace napojená na openAI API" loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      React aplikace napojená na openAI API
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p>🧭 Závěrečný projekt v rámci intenzivní React akademie.</p>
+                    <p class="card__text">
+                      Webová aplikace je vytvořena za pomocí knihovny <strong>React</strong> a propojená s
+                      <strong>OpenAI API</strong>.
+                      Má textové pole, do kterého se vkládá kód a s využitím OpenAI dostaneme vysvětlení toho, co kód
+                      dělá.
+                      Pod ním je input pro <strong>vložení vlastního API klíče</strong>, nutný pro request - bez něj
+                      výsledek
+                      nedostanete.
+                    </p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">React</li>
+                      <li class="labels__item labels__item--orange">JSX</li>
+                      <li class="labels__item labels__item--orange">Tailwind</li>
+                      <li class="labels__item labels__item--orange">Vite</li>
+                      <li class="labels__item labels__item--orange">OpenAI API</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li><a class="active__link" href="https://nikolencz.github.io/explain-code-app/">Explain my code
+                          app
+                          -
+                          site</a></li>
+                      <li><a class="active__link" href="https://github.com/NikoLenCZ/explain-code-app">Explain my code
+                          app
+                          -
+                          Github repozitář</a></li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <!-- / PROJECT SECTION -->
+              <!-- PROJECT SECTION -->
+              <article class="card card--reverse">
+                <img class="card__image card__image--small" src="/img/todojs-450.webp" alt="todo list v Javascriptu"
+                  loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      Jednoduchý todo list v JavaScriptu
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p class="card__text">Chtěla jsem si vytvořit jednoduchý to-do list úkolů a osvěžit si
+                      <strong>základy
+                        JavaSciptu</strong>. Časem budou krok po kroku přibývat nové funkcionality.
+                    </p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">Open Props</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li><a class="active__link" href="https://nikolencz.github.io/ToDo-list/">ToDo list live</a></li>
+                      <li><a class="active__link" href="https://github.com/NikoLenCZ/ToDo-list">ToDo list -
+                          Github repozitář</a></li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <!-- / PROJECT SECTION -->
+              <!-- PROJECT SECTION -->
+              <article class="card">
+                <img class="card__image card__image--small" src="/img/naslovicko-450.webp" alt="JS hra Na slovíčko"
+                  loading="lazy">
+                <article class="card__inner">
+                  <header>
+                    <h1 class="card__title">
+                      Na slovíčko - klon hry Worlde
+                    </h1>
+                  </header>
+                  <section class="card__section">
+                    <p class="card__text">Klon hry Wordle, vytvořené pro studijní účely v rámci <a
+                        href="https://www.youtube.com/watch?v=x-KXrkrM9D4">kurzu
+                        programování v JavaScriptu</a>
+                      od Yablka. Kód jsem si <strong>upravila dle svého</strong> a přidala pár drobností. Časem budu
+                      přidávat
+                      nové funkcionality
+                      a vychytávky.</p>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">LottieFiles</li>
+                    </ul>
+                  </section>
+                  <footer>
+                    <ul class="card__footer__list">
+                      <li><a class="active__link" href="hhttps://nikolencz.github.io/naslovicko/">Na slovíčko live</a>
+                      </li>
+                      <li><a class="active__link" href="https://github.com/NikoLenCZ/naslovicko">Na slovíčko -
+                          Github repozitář</a></li>
+                    </ul>
+                  </footer>
+                </article>
+              </article>
+              <!-- / PROJECT SECTION -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-4 lg:pt-12">
+        <a class="button button--secondary" href="/portfolio.html">Chci vidět všechny projekty</a>
+      </div>
+    </section>
+
+    <!-- /SECTION WITH TABS - MY PROJECTS -->
+    <!-- ABOUT ME SECTION -->
+    <section class="grid grid-cols-12 px-4 md:px-0" id="aboutMe">
+      <div class="col-start-1 col-end-13 md:col-span-8 md:col-start-3">
+        <h2>Něco málo o mě</h2>
+        <p class="my-4">
+          Jsem frontend kodérka a web developerka. Baví mě vytvářet a rozvíjet webové
+          stránky s ohledem na lepší výsledky, přání zadavatele a na mé vlastní <strong>zkušenosti s kódováním, UX/UI a
+            SEO</strong>.
+        </p>
+        <p class="my-4">
+          Vše
+          začalo
+          kurzem <strong>od Czechitas</strong> a dovedlo mě to až <strong>do webového týmu</strong> v korporátu, kde
+          jsem mohla rozvinout své dovednosti,
+          pracovat na různých zajímavých projektech a učit se od šikovných lidí. V rámci <strong>rozvoje</strong> jsem
+          kódovala
+          statické <strong>webové prezentace</strong>. <br>
+          Po třech letech jsem se rozhodla
+          postupovat <strong>dále do frontendu</strong> a rozšířit své dovednosti a používané technologie. </p>
+        <p class="my-4">
+          Absolvovala jsem <strong>React akademii</strong> od React Girls, kde jsem se naučila <strong>základy
+            Reactu</strong> a vytvořila si vlastní
+          aplikaci napojenou na <strong>OpenAI API</strong>. Dále jsem prošla <strong>intenzivním mentoringem
+            JavaScriptu</strong>, kde jsem si upevnila
+          základy a postoupila k pokročilým úkonům - promises a async/await. Zároveň jsem přijala jako výzvu nakódovat
+          <strong>web pro WordPress</strong> dle grafických podkladů ve figmě a rozšířit si tak obzory o <strong>základy
+            PHP pro WordPress, Gitpod a Gitlab, práci s Tailwindem a
+            JavaScriptové animace</strong>.
+        </p>
+        <p class="my-4">
+          A co dál? Baví mě <strong>frontend</strong> a baví mě <strong>kódovat</strong>. Chci dál stavět a rozvíjet to
+          co už umím a <strong>posouvat se dál</strong>. Do
+          budoucna bych chtěla hlouběji proniknout <strong>do Reactu</strong> a být součástí většího projektu.
+        </p>
+        <h3 class="my-12 italic md:mt-20">
+          Dlouhodobá spolupráce
+        </h3>
+        <div class="max-w-[40rem] mx-auto gap-8 md:gap-0 grid sm:grid-flow-col place-items-center auto-cols-fr">
+          <img class="max-w-[8rem]" src="/img/tmobile.webp" alt="Logo T-Mobile" loading="lazy">
+          <img class="max-w-[8rem]" src="/img/jdmotor.webp" alt="Logo JDmotoR" loading="lazy">
+          <img class="max-w-[8rem]" src="/img/vodotop.webp" alt="Logo Vodotop" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- /ABOUT ME SECTION -->
+    <!-- LEARNING AND COURSES -->
+    <section class="" id="courses">
+      <h2>
+        Vzdělávání a oblíbené zdroje
+      </h2>
+      <div class="relative max-w-full pl-4 md:pl-0 lg:max-w-[calc(100%-7rem)] xl:max-w-[calc(100%-4rem)] mx-auto">
+
+
+        <!-- glide slider -->
+        <div class="glide mt-9 lg:mt-28">
+          <div class="glide__track lg:max-w-[94%] lg:mx-auto" data-glide-el="track">
+            <ul class="glide__slides ">
+              <li class="glide__slide">
+                <img src="/img/coreskill.webp" alt="CoreSkill" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    S mentoringem a s lektorkou Kate Mihálikovou jsem byla opravdu moc spokojená. Kate je nejen moc fajn
+                    jako člověk ale také profesionálka, která chce, aby její student pochopil co a jak a proč dělá.
+                  </p>
+                  <a class="active__link" href="https://coreskill.tech/">CoreSkill</a>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <img src="/img/reactgirls.webp" alt="react girls" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Skvělá komunita lidí, která vzdělává nejen ženy a nejen v Reactu :-) Ráda navštěvuji jejich meetupy
+                    kde se dozvím spoustu zajímavých informací a potkám spousty zajímavých lidí kteří mají podobné
+                    zájmy.
+                  </p>
+                  <a class="active__link" href="https://reactgirls.com/">React girls</a>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <img src="/img/frontendisti.webp" alt="Frontendisti" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Další úžasná frontendová komunita :-) i tady jsem pravidelným návštěvníkem meetupů,
+                    kde se dozvím spoustu zajímavých novinek a informací, potkám se a pokecám se skvělými lidmi.
+                  </p>
+                  <a class="active__link" href="https://frontendisti.cz/">Frontendisti</a>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <img src="/img/kevin.webp" alt="Kevin Powell" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Youtube kanál se spoustou inspirace, tipů, triků, vychytávek a novinek z frontendu a web
+                    designu. Kevin je více zaměřený na CSS a Sass, ale mezi jeho videi najdeme i Javascript.
+                  </p>
+                  <a class="active__link" href="https://www.youtube.com/kevinpowell">Kevin Powell&nbsp;YT</a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/img/developbyed.webp" alt="DevelopedByEd">
+                <div class="slide__wrapper">
+                  <p>
+                    Ed je vždy dobře naladěný a usměvavý full stack engineer, který vás provede světem frontendu, web
+                    developmentu a web designu.
+                  </p>
+                  <a class="active__link" href="https://www.youtube.com/@developedbyed">DevelopedByEd YT</a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/img/traversy.webp" alt="Traversy Media" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Super videa pro začátečníky i pokročilé, skvěle vysvětlené od základů step by step, s praktickou
+                    ukázkou na menších i větších projektech.
+                  </p>
+                  <a class="active__link" href="https://www.youtube.com/@TraversyMedia">Traversy Media&nbsp;YT</a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/img/wds.webp" alt="WebDevSimplified" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Výukový youtube kanál kde se naučíte potřebné dovednosti a techniky web developmentu. V pokročilých
+                    tématech jde do hloubky pomocí nejnovějších a osvědčených postupů.
+                  </p>
+                  <a class="active__link" href="https://www.youtube.com/c/WebDevSimplified/featured">Web Dev
+                    Simplifie YT</a>
+                </div>
+              </li>
+              <li class="glide__slide"><img src="/img/learn2code.webp" alt="Skillmea" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>
+                    Za mě je top kurz Webrebel nebo třeba speciální kurz Javascriptu.
+                    Možná Yablko nesedne všem, ale já ho prostě žeru :-D Brm.
+                  </p>
+                  <a class="active__link" href="https://skillmea.cz/">Skillmea (Learn2Code)</a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <img src="/img/czechitas.webp" alt="Czechitas" loading="lazy">
+                <div class="slide__wrapper">
+                  <p>Skvělé místo, pro začátek cesty do IT, kde můžete zjistit co vás vlastně baví a jakým směrem se
+                    vydat. Získáte solidní základy na kterých můžete dál stavět.</p>
+                  <a class="active__link" href="https://czechitas.cz/">Czechitas</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button aria-label="slider button" class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg class="fill-current glide__svg">
+                <use xlink:href="/img/InlineSprite.svg#ico-arrow-left"></use>
+              </svg>
+            </button>
+            <button aria-label="slider button" class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg class="fill-current glide__svg">
+                <use xlink:href="/img/InlineSprite.svg#ico-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=0"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=1"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=2"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=3"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=4"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=5"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=6"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=7"></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=8"></button>
+          </div>
+        </div>
+        <!-- /glide slider -->
+      </div>
+    </section>
+    <!-- /LEARNING AND COURSES -->
+    <!-- SECTION WITH CONTACT FORM -->
+    <section class="px-4 md:px-0" id="contact">
+      <h2>
+        Napište mi
+      </h2>
+      <p class="text-lg text-center text-gray-900 md:text-xl">
+        Máte zájem o spolupráci nebo jen dotaz? <br>
+      </p>
+
+      <div class="max-w-[45rem] mx-auto">
+        <div class="grid justify-center md:grid-cols-2">
+          <a class="flex items-center gap-4 my-5 address__link max-h-12" href="mailto:web@nikolen.cz">
+            <svg class="w-10 h-10 fill-orange-500">
+              <use xlink:href="/img/InlineSprite.svg#at-bold"></use>
+            </svg>
+            <p class="m-0">E-mail je osvědčená klasika</p>
+          </a>
+          <a class="flex items-center gap-4 my-5 address__link max-h-12" href="https://www.linkedin.com/in/nikolen/">
+            <svg class="w-10 h-auto fill-orange-500">
+              <use xlink:href="/img/InlineSprite.svg#linkedin"></use>
+            </svg>
+            <p class="m-0">Spojte se se mnou na LinkedIn</p>
+          </a>
+        </div>
+        <p class="mb-10 text-lg text-center text-gray-900 md:text-xl">Nebo vyplňte formulář níže a&nbsp;já se
+          s&nbsp;vámi
+          co&nbsp;nejdříve spojím 😊</p>
+
+        <p hidden class="result" id="result"></p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="be2edc9d-52f6-4b7c-aba0-7d445df94af5" />
+          <input type="hidden" name="from_name" value="Web3Forms - NikoLen">
+          <input type="hidden" name="subject" value="Nová zpráva z formuláře Web3Forms" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+          <div class="flex flex-col gap-5 my-5 mb-6 sm:flex-row sm:gap-7 ">
+            <div class="w-full md:w-1/2">
+              <label for="name" class="block px-1 mb-2 text-sm text-gray-900">Jméno</label>
+              <input type="text" name="name" id="name" placeholder="Jarda Polívka" required class="form__input" />
+              <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
+                Prosím vyplňte Vaše jméno
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <label for="email" class="block px-1 mb-2 text-sm text-gray-900">Email</label>
+              <input type="email" name="email" id="email" placeholder="napriklad@email.cz" required
+                class="form__input" />
+              <div class="mt-1 text-sm font-bold text-red-500 empty-feedback">
+                Zadejte váš email
+              </div>
+              <div class="mt-1 text-sm font-bold text-red-500 invalid-feedback">
+                Zadejte platný email
+              </div>
+            </div>
+          </div>
+          <div class="my-5 mb-6">
+            <label for="message" class="block px-1 mb-2 text-sm text-gray-900">Zpráva</label>
+            <textarea rows="5" name="message" id="message" placeholder="Prosím vyplňte co máte na srdci"
+              class="form__input" required></textarea>
+            <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
+              Zadejte text zprávy
+            </div>
+            <!-- <! -- Hcaptcha -->
+            <div class="h-captcha" data-hl="cs" data-captcha="true"></div>
+            <!-- <! -- /Hcaptcha -->
+          </div>
+          <div class="mb-6">
+            <button aria-label="form submit button" type="submit" class="button button--primary">
+              Odeslat zprávu
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+    <!-- /SECTION WITH CONTACT FORM -->
+  </main>
+  <footer class="main__footer">
+    <p class="main__footer__text">
+      &copy;&nbsp;Lenka Nikodýmová 2023
+      <a class="main__footer__link" href="mailto:web@nikolen.cz">web@nikolen.cz</a>
+    </p>
+  </footer>
+</body>
+
+</html>

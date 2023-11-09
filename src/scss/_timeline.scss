@@ -1,0 +1,93 @@
+.timeline__wrapper {
+  @apply grid grid-flow-col gap-x-4 max-w-7xl mx-auto overflow-x-hidden;
+}
+
+.article {
+@apply p-4 lg:p-6;
+  }
+
+.article__header {
+    @apply grid;
+  }
+
+.article__year {
+  @apply text-orange-400 text-lg font-semibold tracking-wide;
+}
+
+.article__title {
+  @apply text-2xl font-bold order-2 text-left;
+}
+
+.type__label {
+  @apply text-sm p-2 bg-violet-50/40 align-middle border border-violet-100 rounded-md;
+}
+
+.article__subtitle {
+  @apply text-xl my-3 font-semibold;
+}
+
+.article__text {
+  @apply text-base my-3;
+}
+
+// glide
+
+.glide2 {
+
+  .glide__arrows {
+    @apply flex justify-center items-center;
+  }
+
+  .glide__arrow {
+    @apply w-20 h-24 lg:h-full border border-transparent bg-transparent flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out text-violet-900 lg:absolute bottom-0  lg:top-0;
+    @apply lg:w-16;
+    @apply hover:text-orange-400;
+  }
+
+  .glide__svg {
+    @apply w-4;
+  }
+
+  .glide__arrow--right {
+    @apply lg:-right-14 xl:-right-20;
+  }
+
+
+  .glide__arrow--left {
+    @apply lg:-left-14 xl:-left-20;
+  }
+
+  .glide__slides {
+    @apply pb-10 pt-20 sm:py-10 grid grid-flow-col;
+  }
+
+.glide__slide {
+  @apply bg-white shadow-lg shadow-violet-100 rounded-lg border ;
+}
+
+.glide__bullets {
+  @apply absolute flex-wrap mx-auto gap-x-6 gap-y-12 sm:gap-y-0 md:gap-6 lg:gap-12 w-full -top-16 flex justify-center my-10 items-center min-h-[1rem];
+}
+
+.glide__bullet {
+  @apply bg-transparent;
+}
+
+.glide__bullet {
+  @apply border border-[#f56565] rounded-full h-3 w-3 lg:h-4 lg:w-4 my-0 mx-[5px] cursor-pointer transition-all duration-300 ease-in-out;
+  @apply hover:bg-red-200;
+}
+.glide__bullet span {
+  @apply md:inline-block relative -top-8 -left-[.6rem] text-xs md:text-sm hover:text-[#f56565]/60 text-violet-900;
+}
+
+.glide__bullet--active {
+  @apply bg-[#f56565] active:bg-[#f56565] border-[#f56565] border h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 ease-in-out;
+  @apply hover:bg-[#f56565]/50;
+}
+
+.glide__bullet--active span {
+  @apply text-[#f56565] active:text-[#f56565] scale-110 font-bold;
+}
+
+}

@@ -1,0 +1,106 @@
+
+.glide {
+
+  .glide__arrows {
+    @apply hidden lg:block
+  }
+
+// .glide__arrow {
+//   @apply w-10 h-full border border-transparent bg-transparent flex justify-center cursor-pointer transition-all duration-300 ease-in-out text-violet-900 items-center absolute top-0 text-2xl sm:text-3xl ;
+//   @apply lg:text-5xl lg:w-16;
+//   @apply hover:text-orange-400;
+// }
+
+// .glide__arrow--left {
+//   @apply -left-[12px];
+//   @apply md:left-0;
+// }
+
+// .glide__arrow--right {
+//   @apply -right-[12px];
+//   @apply md:right-0
+// }
+
+.glide__arrow {
+  @apply w-20 h-24 lg:h-full border border-transparent bg-transparent flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out text-violet-900 md:absolute bottom-0  md:top-0;
+  @apply lg:w-16;
+  @apply hover:text-orange-400 ;
+}
+
+.glide__arrow--right {
+  @apply md:-right-0 lg:-right-14 xl:-right-8;
+}
+
+
+.glide__arrow--left {
+  @apply md:-left-0 lg:-left-14 xl:-left-8;
+}
+
+
+.glide__bullets {
+  @apply flex justify-center my-10 items-center min-h-[1rem];
+}
+
+.glide__bullet {
+  @apply bg-transparent;
+}
+
+.glide__bullet {
+  @apply border border-orange-400 rounded-full h-3 w-3 my-0 mx-[5px] cursor-pointer transition-all duration-300 ease-in-out;
+  @apply hover:bg-orange-200;
+}
+
+.glide__bullet--active {
+  @apply bg-orange-400 border-orange-400 border h-[12px] w-[12px] transition-all duration-300 ease-in-out;
+  @apply hover:bg-orange-400;
+}
+
+.glide__slides {
+  @apply py-10 md:grid grid-flow-col;
+}
+
+.glide__slide {
+  @apply border shadow-md rounded-lg h-full border-slate-300 transform md:scale-95 transition-all duration-300 ease-in-out overflow-hidden;
+}
+
+.glide__slide--active {
+  @apply md:border-orange-300 shadow-lg transform md:scale-110;
+}
+
+.glide__slide img {
+  @apply w-full h-auto object-cover;
+}
+
+.glide__slide p {
+  @apply text-base;
+}
+
+
+.slide__wrapper {
+  @apply py-4 px-3;
+}
+
+}
+
+//general styles
+
+
+.glide__arrows {
+  @apply flex justify-center items-center;
+}
+
+
+
+.glide__svg {
+  @apply w-4;
+}
+
+
+
+// * {
+//   @apply border;
+// }
+
+// .glide__arrow--right {
+//   @apply after:content-[''] after:w-full after:h-full after:absolute after:top-0 after:right-0 after:mr-[-1.5rem] after:mb-[-1.5rem] after:bg-gradient-to-l from-white to-transparent after:border after:border-slate-300;
+// }

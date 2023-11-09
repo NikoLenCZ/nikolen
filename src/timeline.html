@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NikoLen - moje cesta do frontendu</title>
+  <meta name="description"
+    content="Moje cesta k frontendu je příběh plný odhodlání a houževnatosti. Když jsem se rozhodla, že chci tvořit webové stránky, ještě jsem netušila jak velké dobrodružství mě čeká." />
+  <meta name="robots" content="index, follow">
+  <meta name="apple-mobile-web-app-title" content="https://nikolen.cz/timeline">
+  <meta name="application-name" content="https://nikolen.cz/timeline">
+  <link rel="canonical" href="https://nikolen.cz/timeline">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nikolen.cz/img/og-image.png">
+  <meta property="og:title" content="NikoLen - moje cesta do frontendu">
+  <meta property="og:description" lang="cs"
+    content="Moje cesta k frontendu je příběh plný odhodlání a houževnatosti. Když jsem se rozhodla, že chci tvořit webové stránky, ještě jsem netušila jak velké dobrodružství mě čeká.">
+  <meta property="og:url" content="https://nikolen.cz/timeline">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://nikolen.cz/timeline">
+  <meta property="twitter:title" content="NikoLen - moje cesta do frontendu">
+  <meta property="twitter:description" lang="cs"
+    content="Moje cesta k frontendu je příběh plný odhodlání a houževnatosti. Když jsem se rozhodla, že chci tvořit webové stránky, ještě jsem netušila jak velké dobrodružství mě čeká.">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#4d267c">
+  <meta name="msapplication-TileColor" content="#4d267c">
+  <meta name="theme-color" content="#4d267c">
+  <script type="module" src="/js/index.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER WITH NAVIGATION -->
+  <header class="w-full max-w-screen-1920 1920:mx-auto">
+    <nav class="relative items-center justify-center md:flex md:h-32 navigation">
+      <div class="flex items-center justify-between p-2 nav-header md:justify-center">
+        <!-- MENU ICON -->
+        <div class="z-50 order-2 cursor-pointer navbar-icon md:hidden text-violet-800">
+          <svg id="icon-menu"
+            class="w-2 rotate-90 fill-violet-700 h-2 inline-block transition-transform duration-[400ms] ease-linear">
+            <use xlink:href="/img/InlineSprite.svg#ico-double-arrow"></use>
+          </svg>
+          <span class="text-xs font-bold menu-title ">MENU</span>
+        </div>
+        <!-- / MENU ICON -->
+        <!-- LOGO -->
+        <div class="z-20 order-1 md:absolute logo">
+          <a class="" href="index.html">
+            <img
+              class="w-12 h-12 aspect-square transition-all duration-200 ease-in hover:drop-shadow-[0_3px_3px_rgba(170,26,213,0.43)] shadow-violet-800 lg:w-full lg:h-auto"
+              src="/img/LN-logo.webp" alt="logo">
+          </a>
+        </div>
+        <!-- / LOGO -->
+      </div>
+      <!-- MENU LIST -->
+      <ul class="navList">
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#aboutMe">O mně</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/timeline.html">Timeline</a>
+        </li>
+        <li class="nav__item md:mr-[6rem] lg:mr-[18rem]">
+          <a class="nav__link" href="/index.html#courses">Vzdělávání</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#tools">Technologie</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/index.html#contact">Kontakt</a>
+        </li>
+      </ul>
+      <!-- / MENU LIST -->
+    </nav>
+
+    <!-- HEADLINE AND TEXT -->
+    <div class="max-w-[60rem] px-4 mx-auto mt-8 md:mt-16 pb-14">
+      <h1 class="my-0 text-3xl h2">
+        Moje cesta k frontendu
+      </h1>
+      <p class="my-0">Moje cesta k frontendu je příběh plný odhodlání a houževnatosti. Když jsem se rozhodla, že chci
+        tvořit webové stránky, ještě jsem netušila jak velké dobrodružství mě čeká. A i když byly chvíle kdy jsem na to
+        chtěla vybodnout, s tím že na to nemám, tak jsem ráda, že jsem se nevzdala a rozhodla se pokračovat dál tímto
+        směrem.
+      </p>
+    </div>
+    <!-- /HEADLINE AND TEXT -->
+
+  </header>
+  <!-- / HEADER WITH NAVIGATION -->
+  <main class="max-w-full mx-auto lg:max-w-screen-1920" id="top">
+    <!-- SECTION WITH TIMELINE -->
+    <section class="h-full px-4 timeline__section" id="timeline">
+      <div class="relative mx-auto md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl">
+        <!-- glide slider -->
+        <div class="glide2">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides ">
+              <li class="glide__slide">
+                <article class="article" id="vodotop">
+                  <header class="article__header">
+                    <h1 class="article__title">Artevio s.r.o.</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2023</span>
+                      <span class="labels__item labels__item--purple">Práce</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Frontend kodérka</p>
+                    <p class="article__text">
+                      Kódování webových stránek na míru pro WordPress na základě grafického designu ve Figmě.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">PHP pro WordPress</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                      <li class="labels__item labels__item--orange">Tailwind</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="vodotop">
+                  <header class="article__header">
+                    <h1 class="article__title">CoreSkill</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2023</span>
+                      <span class="labels__item labels__item--purple">Mentoring</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">JavaScript mentoring</p>
+                    <p class="article__text">
+                      Intenzivní mentoring Javascriptu. Upevnění základů a postoupení k pokročilejším funkcím a metodám.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="vodotop">
+                  <header class="article__header">
+                    <h1 class="article__title">React Girls</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2023</span>
+                      <span class="labels__item labels__item--purple">Kurz</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">React akademie</p>
+                    <p class="article__text">
+                      Intenzivní kurz základů programování v&nbsp;Reactu zakončený závěrečným projektem -&nbsp;aplikace
+                      napojená
+                      na openAI API.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">React</li>
+                      <li class="labels__item labels__item--orange">JSX</li>
+                      <li class="labels__item labels__item--orange">Tailwind</li>
+                      <li class="labels__item labels__item--orange">Vite</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="vodotop">
+                  <header class="article__header">
+                    <h1 class="article__title">Vodotop</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2023</span>
+                      <span class="labels__item labels__item--purple">Práce</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Web firmy</p>
+                    <p class="article__text">
+                      Webová prezentace firmy dle vlastního návrhu, nakódování stránky včetně responzivního designu a
+                      optimalizace SEO.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">Figma</li>
+                      <li class="labels__item labels__item--orange">Photoshop</li>
+                      <li class="labels__item labels__item--orange">Grunt JS</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="jdmotor">
+                  <header class="article__header">
+                    <h1 class="article__title">JDmotoR</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2021</span>
+                      <span class="labels__item labels__item--purple">Práce</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Web firmy</p>
+                    <p class="article__text">
+                      Tvorba návrhu webu, nakódování stránky včetně responzivního designu a následná správa webu.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">jQuery</li>
+                      <li class="labels__item labels__item--orange">Adobe XD</li>
+                      <li class="labels__item labels__item--orange">Photoshop</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="learn2code">
+                  <header class="article__header">
+                    <h1 class="article__title">Learn2Code</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2020</span>
+                      <span class="labels__item labels__item--purple">Kurz</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Webrebel</p>
+                    <p class="article__text">
+                      Absolvování online kurzů Webrebel, Javascript, CSS preprocesory: Sass, Git a GitHub základy.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                      <li class="labels__item labels__item--orange">Sass</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">Git</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="tmobile">
+                  <header class="article__header">
+                    <h1 class="article__title">T-Mobile CZ</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2020 - 2023</span>
+                      <span class="labels__item labels__item--purple">Práce</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Web Adminka</p>
+                    <p class="article__text">
+                      Nastoupila jsem jako web administrátorka a nejčasteji jsem pracovala na vývoji a nasazení
+                      firemních
+                      webových stránek a landing pages.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                      <li class="labels__item labels__item--orange">Bootstrap</li>
+                      <li class="labels__item labels__item--orange">jQuery</li>
+                      <li class="labels__item labels__item--orange">JavaScript</li>
+                      <li class="labels__item labels__item--orange">Liferay</li>
+                      <li class="labels__item labels__item--orange">Adobe XD</li>
+                      <li class="labels__item labels__item--orange">SEO</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="pristupnyWeb">
+                  <header class="article__header">
+                    <h1 class="article__title">Hackathon - Social Bakers</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2019</span>
+                      <span class="labels__item labels__item--purple">Akce</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Přístupný web</p>
+                    <p class="article__text">
+                      Intenzivní víkend, jehož cílem bylo v omezeném čase redesignovat stránky neziskové
+                      organizace.
+                      Skvělá zkušenost ohledně efektivní týmové spolupráce.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">SCSS</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+              <li class="glide__slide">
+                <article class="article" id="czechitas">
+                  <header class="article__header">
+                    <h1 class="article__title">Czechitas</h1>
+                    <div class="flex justify-between">
+                      <span class="article__year">2019</span>
+                      <span class="labels__item labels__item--purple">Kurz</span>
+                    </div>
+                  </header>
+                  <section class="article__body">
+                    <p class="article__subtitle">Web od A do Z</p>
+                    <p class="article__text">
+                      Tříměsíční kurz základů HTML a CSS pro tvorbu statických stránek zakončený certifikátem
+                      absolventa.
+                    </p>
+                  </section>
+                  <footer>
+                    <ul class="labels">
+                      <li class="labels__item labels__item--orange">HTML</li>
+                      <li class="labels__item labels__item--orange">CSS</li>
+                    </ul>
+                  </footer>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class=" glide__arrows" data-glide-el="controls">
+            <button aria-label="slider button" class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <svg class="fill-current glide__svg">
+                <use xlink:href="/img/InlineSprite.svg#ico-arrow-left"></use>
+              </svg>
+            </button>
+            <button aria-label="slider button" class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <svg class="fill-current glide__svg">
+                <use xlink:href="/img/InlineSprite.svg#ico-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=0">
+              <span>2023</span>
+            </button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=1">
+              <span>2023</span>
+            </button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=2"><span>2023</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=3"><span>2023</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=4"><span>2021</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=5"><span>2020</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=6"><span>2020</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=7"><span>2019</span></button>
+            <button aria-label="slider button" class="glide__bullet" data-glide-dir="=8"><span>2019</span></button>
+          </div>
+        </div>
+        <!-- /glide slider -->
+      </div>
+
+      <!-- <div class="timeline__wrapper">
+
+      </div> -->
+    </section>
+
+
+    <!-- /SECTION WITH TABS - MY PROJECTS -->
+
+    <!-- SECTION WITH CONTACT FORM -->
+
+    <!-- /SECTION WITH CONTACT FORM -->
+  </main>
+  <footer class="main__footer">
+    <p class="main__footer__text">
+      &copy;&nbsp;Lenka Nikodýmová 2023
+      <a class="main__footer__link" href="mailto:web@nikolen.cz">web@nikolen.cz</a>
+    </p>
+  </footer>
+</body>
+
+</html>

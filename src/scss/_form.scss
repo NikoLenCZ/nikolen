@@ -1,0 +1,37 @@
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+.form__input {
+  @apply w-full px-3 py-2 placeholder-gray-300 border-2 border-violet-800 rounded-md focus:outline-none focus:ring focus:ring-purple-100 focus:border-purple-900;
+}
+
+.result {
+  @apply text-xl py-4 border-2 rounded-lg border-transparent font-bold text-center;
+}
+
+.result--pending {
+  @apply border-yellow-600 bg-yellow-50 text-gray-700;
+}
+
+.result--error {
+  @apply border-red-600 bg-red-50 text-red-700;
+}
+
+.result--success {
+  @apply border-green-600 bg-green-50 text-green-700;
+}

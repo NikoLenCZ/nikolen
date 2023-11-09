@@ -1,0 +1,92 @@
+
+.tab__cards__wrapper {
+  @apply grid w-fit mx-auto grid-cols-1 justify-center items-start gap-4 md:grid-cols-3 lg:gap-8 2xl:gap-20 xl:gap-12 px-4 2xl:px-0;
+
+
+  .card {
+    @apply grid lg:gap-x-10 place-items-center lg:gap-y-6;
+    @apply lg:place-items-center lg:my-14 lg:grid-cols-1;
+  }
+  .card__image--small{
+    @apply justify-self-center mx-auto max-w-md rounded-lg;
+  }
+
+  .card__inner {
+    @apply w-full flex flex-col justify-center lg:max-w-md h-full p-4 lg:p-6;
+  }
+
+  .card--reverse {
+    img, .card__picture {
+      @apply order-1 md:order-2;
+    }
+    .card__inner {
+      @apply order-2 md:order-1 mx-auto;
+    }
+    .card__image--small{
+      @apply justify-self-center mx-auto rounded-lg;
+    }
+  }
+}
+
+.card {
+  @apply grid mx-auto grid-cols-1 lg:gap-x-10 place-items-center my-8;
+  @apply lg:place-items-start lg:my-14 lg:grid-cols-2;
+}
+
+.card--reverse {
+  img, picture {
+    @apply order-1 lg:order-2;
+  }
+  .card__inner {
+    @apply order-2 lg:order-1 ml-auto;
+  }
+  .card__image--small{
+    @apply justify-self-start ml-0 md:ml-12;
+  }
+}
+
+
+.card__image {
+  @apply w-full aspect-square object-cover max-w-[960px] shadow-xl h-auto mb-8;
+  @apply lg:mb-0;
+}
+
+.card__image--small {
+  @apply max-w-lg justify-self-end mr-0 md:mr-12;
+}
+
+.card__inner {
+  @apply w-full flex flex-col justify-center lg:max-w-lg h-full p-4 lg:p-6;
+}
+
+.card__section {
+  @apply mb-7;
+}
+
+.card__title {
+  @apply text-xl md:text-2xl mb-3 lg:mb-4;
+}
+
+.card__text {
+  @apply text-base mt-0;
+}
+
+.labels__item {
+  @apply inline-block px-2 py-1 font-bold my-1 border-2 rounded-3xl text-sm;
+}
+
+.labels__item--orange {
+  @apply text-orange-900 border-orange-600;
+}
+
+.labels__item--purple {
+  @apply text-purple-900 border-purple-700;
+}
+
+.card__footer__list {
+  @apply list-disc list-inside;
+}
+
+li::marker {
+  @apply text-purple-600 text-lg;
+}

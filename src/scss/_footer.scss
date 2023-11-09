@@ -1,0 +1,11 @@
+.main__footer {
+  @apply mt-auto w-full mb-0 bg-violet-900;
+}
+
+.main__footer__text {
+  @apply px-4 py-6 m-0 text-white text-center;
+}
+
+.main__footer__link {
+  @apply text-white inline-block underline sm:ml-10 ml-4 mt-2 mobile:mt-0 mobile:before:content-['|'] before:content-none sm:before:mr-10 hover:text-orange-400 hover:before:text-white before:mr-4;
+}

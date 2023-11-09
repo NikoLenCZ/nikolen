@@ -1,16 +1,17 @@
-# NikoLen -  my personal page
+# 💫 NikoLen -  my personal page
 
-Created with:
+## 🏗️ Created with:
 
 - HTML
 - Sass / SCSS
-- JQuery / JS
+- Tailwind CSS
+- JavaScript
+- Yarn + Vite JS
 
-Tools:
+## 🛠️ Tools:
 
 - VS Code
-- Photoshop
-- Adobe XD / Figma
-- NPM + Grunt
+- Photoshop + Photopea
+- Penpot
 
 final web: https://nikolen.cz

@@ -1,0 +1,14 @@
+[role="tablist"] {
+  @apply grid px-4 sm:px-0 max-w-[34rem] sm:grid-cols-2 mx-auto my-12 text-xl place-items-center gap-y-4 mb-8 list-none;
+}
+
+
+[role="tab"] {
+  @apply transition-all rounded-lg shadow-sm block duration-300 text-center ease-in-out border-b-[3px] text-slate-600  hover:text-violet-500 hover:border-orange-200 px-4 py-2;
+
+}
+
+
+[aria-selected="true"] {
+  @apply text-violet-800 shadow-lg font-bold border-b-[3px] border  border-b-orange-400 hover:text-violet-800 hover:border-b-orange-400;
+}

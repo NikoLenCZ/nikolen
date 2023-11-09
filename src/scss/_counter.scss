@@ -1,0 +1,27 @@
+.counterBox {
+@apply grid place-items-center py-4 sm:border-r border-dashed border-b  w-full md:border-b-0 border-violet-800/50;
+}
+
+.counterBox:nth-child(2) {
+  @apply sm:border-r-0 md:border-r;
+}
+
+.counterBox:nth-child(3) {
+  @apply sm:border-b-0 lg:border-r;
+}
+
+.counterBox:last-child {
+  @apply sm:border-r-0 sm:border-b-0;
+}
+
+.counter__image {
+@apply w-10 h-10 mb-6 fill-orange-500;
+}
+
+.counter__number {
+  @apply mb-5 text-4xl font-black;
+}
+
+.counter__title {
+  @apply text-center text-lg italic;
+}
