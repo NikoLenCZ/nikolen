@@ -50,45 +50,6 @@ new Glide('.glide', {
 .mount();
 }
 
-
-if (document.querySelector('.glide2')) {
-new Glide('.glide2', {
-  type: 'slider',
-  startAt: 0,
-  perView: 2,
-  gap: 10,
-  peek: {
-    before: 0,
-    after: 150,
-  },
-  breakpoints: {
-      1200: {
-          perView: 2,
-          peek: {
-            before: 0,
-            after: 150,
-          },
-      },
-      992: {
-          perView: 2,
-          peek: {
-            before: 0,
-            after: 100,
-          },
-      },
-      768: {
-          perView: 1,
-          peek: {
-            before: 0,
-            after: 0,
-          },
-      },
-  },
-})
-.mount();
-}
-
-
 };
 
 export { initGliders };

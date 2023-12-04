@@ -1,8 +1,51 @@
 .timeline__wrapper {
-  @apply grid grid-flow-col gap-x-4 max-w-7xl mx-auto overflow-x-hidden;
+  @apply grid grid-flow-col pl-8 md:pl-4 gap-x-4 max-w-7xl mx-auto relative;
 }
 
-.article {
+.timeline__list {
+  @apply grid gap-x-16 lg:grid-cols-2 gap-y-4;
+}
+
+.timeline__item {
+  @apply max-w-lg shadow-md relative;
+  &:nth-child(even) {
+    @apply lg:col-start-2; 
+    &:before {
+      @apply  -left-4 lg:-left-8;
+      content: '';
+    }
+    &:after {
+      @apply -left-4 lg:-left-8;
+      content: '';
+    }
+  }
+  &:before {
+    @apply absolute h-4 w-4 rounded-full bg-violet-200 border-2 border-violet-500 top-1/2 -left-4 lg:left-auto lg:-right-12 transform -translate-x-1/2 -translate-y-1/2 z-10;
+    content: '';
+  }
+  &:after {
+    @apply absolute h-[110%] w-[2px] bg-violet-200 -left-4 lg:-right-[2.15rem] lg:left-auto top-[-3%] transform -translate-x-1/2;
+    content: '';
+  }
+  &:first-child {
+    &:after {
+      @apply h-2/3 top-1/2;
+    }
+  }
+  &:last-child {
+    &:after {
+      @apply h-1/2 top-0;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .timeline__item:nth-child(#{$i}) {
+    grid-row-start: $i;
+  }
+}
+
+.timeline__article {
 @apply p-4 lg:p-6;
   }
 
@@ -11,11 +54,11 @@
   }
 
 .article__year {
-  @apply text-orange-400 text-lg font-semibold tracking-wide;
+  @apply text-orange-500 text-2xl font-semibold tracking-wide;
 }
 
 .article__title {
-  @apply text-2xl font-bold order-2 text-left;
+  @apply text-2xl font-bold order-2 text-left mb-2;
 }
 
 .type__label {
@@ -30,64 +73,3 @@
   @apply text-base my-3;
 }
 
-// glide
-
-.glide2 {
-
-  .glide__arrows {
-    @apply flex justify-center items-center;
-  }
-
-  .glide__arrow {
-    @apply w-20 h-24 lg:h-full border border-transparent bg-transparent flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out text-violet-900 lg:absolute bottom-0  lg:top-0;
-    @apply lg:w-16;
-    @apply hover:text-orange-400;
-  }
-
-  .glide__svg {
-    @apply w-4;
-  }
-
-  .glide__arrow--right {
-    @apply lg:-right-14 xl:-right-20;
-  }
-
-
-  .glide__arrow--left {
-    @apply lg:-left-14 xl:-left-20;
-  }
-
-  .glide__slides {
-    @apply pb-10 pt-20 sm:py-10 grid grid-flow-col;
-  }
-
-.glide__slide {
-  @apply bg-white shadow-lg shadow-violet-100 rounded-lg border ;
-}
-
-.glide__bullets {
-  @apply absolute flex-wrap mx-auto gap-x-6 gap-y-12 sm:gap-y-0 md:gap-6 lg:gap-12 w-full -top-16 flex justify-center my-10 items-center min-h-[1rem];
-}
-
-.glide__bullet {
-  @apply bg-transparent;
-}
-
-.glide__bullet {
-  @apply border border-[#f56565] rounded-full h-3 w-3 lg:h-4 lg:w-4 my-0 mx-[5px] cursor-pointer transition-all duration-300 ease-in-out;
-  @apply hover:bg-red-200;
-}
-.glide__bullet span {
-  @apply md:inline-block relative -top-8 -left-[.6rem] text-xs md:text-sm hover:text-[#f56565]/60 text-violet-900;
-}
-
-.glide__bullet--active {
-  @apply bg-[#f56565] active:bg-[#f56565] border-[#f56565] border h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 ease-in-out;
-  @apply hover:bg-[#f56565]/50;
-}
-
-.glide__bullet--active span {
-  @apply text-[#f56565] active:text-[#f56565] scale-110 font-bold;
-}
-
-}

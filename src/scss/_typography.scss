@@ -1,9 +1,10 @@
+
 html {
   font-family: 'Nunito', 'Tahoma', sans-serif;
 }
 
 html {
-  @apply antialiased scroll-smooth;
+  @apply subpixel-antialiased scroll-smooth;
 }
 
 h1, .h1 {
@@ -14,12 +15,16 @@ h1, .h1 {
 
 h2, .h2 {
   @apply text-3xl mb-3 font-bold text-center;
-  @apply lg:text-5xl lg:mt-6 lg:mb-16;
+  @apply lg:text-5xl lg:mt-6 lg:mb-11 2xl:mb-16;
 }
 
 h3, .h3 {
   @apply text-xl mb-3 font-bold text-center;
-  @apply lg:text-4xl lg:my-10;
+  @apply lg:text-4xl lg:my-6;
+}
+
+h4, .h4 {
+  @apply text-2xl mb-4 font-semibold;
 }
 
 p {
@@ -28,7 +33,7 @@ p {
 }
 
 .active__link {
-  @apply font-bold text-violet-900 text-lg leading-7 md:leading-8 md:text-xl mt-2;
+  @apply font-bold text-violet-900 text-lg leading-7 md:leading-8 mt-2;
 }
 
 .active__link {
