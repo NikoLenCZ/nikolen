@@ -10,6 +10,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         portfolio: resolve(__dirname, 'src/portfolio.html'),
         timeline: resolve(__dirname, 'src/timeline.html'),
+        udaje: resolve(__dirname, 'src/zpracovani-osobnich-udaju.html'),
       },
     },
     outDir: '../dist',

@@ -22,7 +22,6 @@
   <meta property="twitter:title" content="NikoLen - frontend kodérka">
   <meta property="twitter:description" lang="cs"
     content="Jsem frontend kodérka, web developerka, bývalá web adminka a aspirující Reacťačka. Mám za sebou spolupráci s agenturou, několik spuštěných webovek na míru a tříletou zkušenost s velkou firmou T‑mobile. Neustále se vzdělávám a sleduji novinky ve frontendových technologiích.">
-
   <link rel="apple-touch-icon" sizes="76x76" href="./icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
@@ -30,10 +29,10 @@
   <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#4d267c">
   <meta name="msapplication-TileColor" content="#4d267c">
   <meta name="theme-color" content="#4d267c">
-
+  
   <script src="https://web3forms.com/client/script.js" async defer></script>
-  <script type="module" crossorigin src="./assets/main-ae894560.js"></script>
-  <link rel="stylesheet" href="./assets/index-5901a734.css">
+  <script type="module" crossorigin src="./assets/main-2862428c.js"></script>
+  <link rel="stylesheet" href="./assets/index-f1972969.css">
 </head>
 
 <body>
@@ -66,13 +65,13 @@
           <a class="nav__link" href="#aboutMe">O mně</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="./timeline">Timeline CV</a>
+          <a class="nav__link" href="./timeline.html">Timeline CV</a>
         </li>
         <li class="nav__item md:mr-[6rem] lg:mr-[18rem]">
           <a class="nav__link" href="#courses">Vzdělávání</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="./portfolio">Portfolio</a>
+          <a class="nav__link" href="#projects">Projekty</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#tools">Technologie</a>
@@ -104,6 +103,21 @@
             Neustále se
             vzdělávám a&nbsp;sleduji novinky ve frontendových technologiích.
           </p>
+          <div class="flex flex-wrap justify-center order-3 gap-8 contact__box md:justify-start">
+            <a class="flex items-center gap-1 mb-5 md:gap-4 address__link max-h-12" href="https://github.com/NikoLenCZ">
+              <svg class="w-10 h-auto fill-violet-900">
+                <use xlink:href="./img/InlineSprite.svg#github"></use>
+              </svg>
+              <p class="m-0">Github</p>
+            </a>
+            <a class="flex items-center gap-1 mb-5 md:gap-4 address__link max-h-12"
+              href="https://www.linkedin.com/in/nikolen/">
+              <svg class="w-10 h-auto fill-violet-900">
+                <use xlink:href="./img/InlineSprite.svg#linkedin"></use>
+              </svg>
+              <p class="m-0">LinkedIn</p>
+            </a>
+          </div>
         </div>
       </div>
       <!-- / MAIN BANNER WITH MAIN PICTURE AND INTRO TEXT -->
@@ -226,7 +240,7 @@
           <svg class="tool__image">
             <use xlink:href="./img/InlineSprite.svg#vite"></use>
           </svg>
-          <figcaption>Vite</figcaption>
+          <figcaption>Vite JS</figcaption>
         </figure>
         <figure class="toolBox">
           <svg class="tool__image">
@@ -239,19 +253,14 @@
     </section>
     <!-- / TOOLS AND TECHNOLOGIES SECTION -->
     <!-- SECTION WITH TABS - MY PROJECTS -->
-    <section id="myWork">
+    <section id="projects">
       <h2>
         Frontend projekty a spolupráce
       </h2>
-      <p class="max-w-5xl px-4 mx-auto mt-4 mb-2 text-center">Mám za sebou několik spuštěných statických webů
-        a&nbsp;nespočet
+      <p class="max-w-5xl px-4 mx-auto mt-4 mb-2 text-center">Mám za sebou několik spuštěných statických webů, nespočet
         upravených
-        firemních stránek. <br class="hidden md:block">
-        S&nbsp;každým novým projektem přichází nová výzva a&nbsp;další nové zkušenosti.</p>
-      <p class="max-w-5xl px-4 mx-auto mt-0 mb-4 text-center">Projekty vytvořené v rámci sebevzdělávání, mentoringu,
-        kurzů a
-        načerpané inspirace.
-        <br class="hidden md:block"> Baví mě zkoušet si a učit se nové frontendové věci a vychytávky.
+        firemních stránek a pár React aplikací.
+        S&nbsp;každým novým projektem přichází nová výzva a&nbsp;další nové zkušenosti.
       </p>
 
       <div class="cards__wrapper">
@@ -267,7 +276,7 @@
                 <li class="labels__item labels__item--orange">React</li>
                 <li class="labels__item labels__item--orange">JSX</li>
                 <li class="labels__item labels__item--orange">Tailwind</li>
-                <li class="labels__item labels__item--orange">Vite</li>
+                <li class="labels__item labels__item--orange">Vite JS</li>
                 <li class="labels__item labels__item--orange">OpenAI API</li>
               </ul>
             </header>
@@ -279,9 +288,8 @@
                 <li class="website--icon"><a class="active__link" href="https://nikolencz.github.io/hp-student-app/">HP
                     Student app
                     live</a></li>
-                <li class="github--icon"><a class=" active__link" href="https://github.com/NikoLenCZ/hp-student-app">HP
-                    Student app -
-                    Github repozitář</a></li>
+                <li class="github--icon"><a class="active__link"
+                    href="https://github.com/NikoLenCZ/hp-student-app">Github repozitář</a></li>
               </ul>
             </footer>
           </article>
@@ -323,7 +331,7 @@
                 <li class="labels__item labels__item--orange">React</li>
                 <li class="labels__item labels__item--orange">JSX</li>
                 <li class="labels__item labels__item--orange">Tailwind</li>
-                <li class="labels__item labels__item--orange">Vite</li>
+                <li class="labels__item labels__item--orange">Vite JS</li>
                 <li class="labels__item labels__item--orange">OpenAI API</li>
               </ul>
             </header>
@@ -336,8 +344,7 @@
                     href="https://nikolencz.github.io/explain-code-app/">Explain my code app
                     live</a></li>
                 <li class="github--icon"><a class=" active__link"
-                    href="https://github.com/NikoLenCZ/explain-code-app">Explain my code app -
-                    Github repozitář</a></li>
+                    href="https://github.com/NikoLenCZ/explain-code-app">Github repozitář</a></li>
               </ul>
             </footer>
           </article>
@@ -391,9 +398,8 @@
                 <li class="website--icon"><a class="active__link" href="https://nikolencz.github.io/ToDo-list/">ToDo
                     list
                     live</a></li>
-                <li class="github--icon"><a class="active__link" href="https://github.com/NikoLenCZ/ToDo-list">ToDo list
-                    -
-                    Github repozitář</a></li>
+                <li class="github--icon"><a class="active__link" href="https://github.com/NikoLenCZ/ToDo-list">Github
+                    repozitář</a></li>
               </ul>
             </footer>
           </article>
@@ -486,8 +492,8 @@
               <ul class="card__footer__list">
                 <li class="website--icon"><a class="active__link" href="https://vodotop-topeni.cz">vodotop-topeni.cz</a>
                 </li>
-                <li class="github--icon"><a class=" active__link" href="https://github.com/NikoLenCZ/Vodotop">Vodotop -
-                    Github repozitář</a>
+                <li class="github--icon"><a class=" active__link" href="https://github.com/NikoLenCZ/Vodotop">Github
+                    repozitář</a>
                 </li>
               </ul>
             </footer>
@@ -532,7 +538,7 @@
                   <a class="active__link" href="https://jdmotor.cz">jdmotor.cz</a>
                 </li>
                 <li class="github--icon">
-                  <a class="active__link" href="https://github.com/NikoLenCZ/JDmotoR">JDmotoR - Github repozitář</a>
+                  <a class="active__link" href="https://github.com/NikoLenCZ/JDmotoR">Github repozitář</a>
                 </li>
               </ul>
             </footer>
@@ -549,7 +555,7 @@
         <!-- / PROJECT SECTION -->
       </div>
       <div class="px-4 lg:pt-12">
-        <a class="button button--secondary" href="/portfolio">Chci vidět všechny projekty</a>
+        <a class="button button--secondary" href="/portfolio.html">Chci vidět všechny projekty</a>
       </div>
     </section>
     <!-- /SECTION WITH TABS - MY PROJECTS -->
@@ -594,8 +600,7 @@
           <img class="max-w-[8rem]" src="./img/tmobile.webp" alt="Logo T-Mobile" loading="lazy">
           <img class="max-w-[8rem]" src="./img/jdmotor.webp" alt="Logo JDmotoR" loading="lazy">
           <img class="max-w-[8rem]" src="./img/vodotop.webp" alt="Logo Vodotop" loading="lazy">
-          <img class="max-w-[8rem] max-h-24 rounded-full" src="./img/vestylu.webp" alt="Logo Ve Stylu CZ"
-            loading="lazy">
+          <img class="max-w-[8rem] max-h-24 rounded-full" src="./img/vestylu.webp" alt="Logo Ve Stylu CZ" loading="lazy">
         </div>
       </div>
     </section>
@@ -802,6 +807,10 @@
             <!-- <! -- Hcaptcha -->
             <!-- <div class="h-captcha" data-hl="cs" data-captcha="true"></div> -->
             <!-- <! -- /Hcaptcha -->
+            <p class="mt-2">
+              Odesláním formuláře souhlasíte
+              <a class="active__link" href="./zpracovani-osobnich-udaju.html">se zpracováním osobních údajů</a>.
+            </p>
           </div>
           <div class="mb-6">
             <button aria-label="form submit button" type="submit" class="button button--primary">
@@ -816,7 +825,10 @@
   </main>
   <footer class="main__footer">
     <p class="main__footer__text">
-      &copy;&nbsp;Lenka Nikodýmová 2023
+      <span class="flex flex-wrap items-center justify-center"> &copy;&nbsp;Lenka Nikodýmová 2023 <img class="w-10 mx-4"
+          src="./img/dragon.svg" alt="dragon svg">
+        Všechna práva
+        vyhrazena </span>
       <a class="main__footer__link" href="mailto:web@nikolen.cz">web@nikolen.cz</a>
     </p>
   </footer>

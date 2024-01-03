@@ -38,7 +38,6 @@ export default {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/nesting'),
     require('@tailwindcss/aspect-ratio'),
 
   ],
