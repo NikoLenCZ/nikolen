@@ -20,7 +20,7 @@ export default defineConfig({
   },
   root: 'src',
   assetsInclude: ['./fonts/'],
-  base: '',
+  base: './',
   publicDir: '../public',
   resolve: {
     alias: {
