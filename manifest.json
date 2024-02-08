@@ -1,9 +1,4 @@
 {
-  "CNAME": {
-    "file": "assets/cname-f4f0ee82.js",
-    "isEntry": true,
-    "src": "CNAME"
-  },
   "index.css": {
     "file": "assets/index-f1972969.css",
     "src": "index.css"
