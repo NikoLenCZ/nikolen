@@ -624,7 +624,7 @@
     <!-- /SECTION WITH TABS - MY PROJECTS -->
 
     <!-- SECTION WITH CONTACT FORM -->
-    <section class="px-4 md:px-0" id="contact">
+    <!-- <section class="px-4 md:px-0" id="contact">
       <h2>
         Napište mi
       </h2>
@@ -687,11 +687,11 @@
             <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
               Zadejte text zprávy
             </div>
-            <!-- <! -- Step 1: Add this line -->
-            <!-- <div class="h-captcha" data-hl="cs" data-captcha="true"></div> -->
+             <! -- Step 1: Add this line -->
+    <!-- <div class="h-captcha" data-hl="cs" data-captcha="true"></div>
             <p class="mt-2">
               Odesláním formuláře souhlasíte
-              <a class="active__link" href="./zpracovani-osobnich-udaju">se zpracováním osobních údajů</a>.
+              <a class="active__link" data-open-dialog="zpracovaniUdaju" href="#">se zpracováním osobních údajů</a>. 💭
             </p>
           </div>
           <div class="mb-6">
@@ -701,7 +701,15 @@
           </div>
           <p class="text-base text-center text-gray-400" id="result"></p>
         </form>
-    </section>
+        <dialog id="zpracovaniUdaju">
+          <button class="close__dialog" data-close-dialog="zpracovaniUdaju">&#10005;</button>
+          <h4>GDPR kontaktní formulář - zpracování osobních údajů</h4>
+          <p>V případě, že vyplňujete kontaktní formulář na tomto webu, zpracovávám Vaše osobní údaje a to jen po dobu
+            nutnou v rámci naší vzájemné komunikace. Jedná se o Vaše
+            jméno a kontaktní email, který slouží pouze pro doručení odpovědi na Váš dotaz.</p>
+          <p>Jiné údaje než výše uvedené nezpracovávám. Vaše osobní údaje nebudou nikdy poskytnuty třetí straně.</p>
+        </dialog>
+    </section> -->
     <!-- /SECTION WITH CONTACT FORM -->
   </main>
   <footer class="main__footer">
