@@ -1,5 +1,8 @@
 .button {
   @apply w-full border-[3px] px-7 py-4 font-bold text-lg rounded-md sm:w-fit sm:flex sm:justify-center sm:mx-auto transition-all duration-300 hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.5)] inline-block text-center;
+  &.filter__button {
+    @apply mx-0 w-[47%] sm:w-fit;
+  }
 }
 
 .button--primary {
