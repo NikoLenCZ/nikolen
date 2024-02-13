@@ -62,9 +62,9 @@
         <li class="nav__item">
           <a class="nav__link" href="#aboutMe">O mně</a>
         </li>
-        <li class="nav__item">
+        <!-- <li class="nav__item">
           <a class="nav__link" href="./timeline">Timeline CV</a>
-        </li>
+        </li> -->
         <li class="nav__item md:mr-[6rem] lg:mr-[18rem]">
           <a class="nav__link" href="#courses">Vzdělávání</a>
         </li>
@@ -74,9 +74,9 @@
         <li class="nav__item">
           <a class="nav__link" href="#tools">Technologie</a>
         </li>
-        <li class="nav__item">
+        <!-- <li class="nav__item">
           <a class="nav__link" href="#contact">Kontakt</a>
-        </li>
+        </li> -->
       </ul>
       <!-- / MENU LIST -->
     </nav>
@@ -101,19 +101,25 @@
             Neustále se
             vzdělávám a&nbsp;sleduji novinky ve frontendových technologiích.
           </p>
-          <div class="flex flex-wrap justify-center order-3 gap-8 contact__box md:justify-start">
-            <a class="flex items-center gap-1 mb-5 md:gap-4 address__link max-h-12" href="https://github.com/NikoLenCZ">
-              <svg class="w-10 h-auto fill-violet-900">
+          <div class="flex flex-wrap justify-center order-3 gap-x-8 contact__box md:justify-start">
+            <a class="flex items-center gap-1 my-5 md:gap-2 address__link max-h-12" href="https://github.com/NikoLenCZ">
+              <svg class="w-10 h-10 fill-violet-900">
                 <use xlink:href="/img/InlineSprite.svg#github"></use>
               </svg>
               <p class="m-0">Github</p>
             </a>
-            <a class="flex items-center gap-1 mb-5 md:gap-4 address__link max-h-12"
+            <a class="flex items-center gap-1 my-5 md:gap-2 address__link max-h-12"
               href="https://www.linkedin.com/in/nikolen/">
-              <svg class="w-10 h-auto fill-violet-900">
+              <svg class="w-10 h-10 fill-violet-900">
                 <use xlink:href="/img/InlineSprite.svg#linkedin"></use>
               </svg>
               <p class="m-0">LinkedIn</p>
+            </a>
+            <a class="flex items-center gap-1 my-5 md:gap-2 address__link max-h-12" href="mailto:web@nikolen.cz">
+              <svg class="w-10 h-10 fill-violet-900">
+                <use xlink:href="/img/InlineSprite.svg#at-bold"></use>
+              </svg>
+              <p class="m-0">E-mail</p>
             </a>
           </div>
         </div>
@@ -127,7 +133,7 @@
             <use xlink:href="/img/InlineSprite.svg#ico-path"></use>
           </svg>
           <p class="counter__number">
-            <span data-from="0" data-to="3" class="count__it">0</span> +
+            <span data-from="0" data-to="4" class="count__it">0</span> +
           </p>
           <p class="counter__title">Roky zkušeností</p>
         </div>
@@ -136,7 +142,7 @@
             <use xlink:href="/img/InlineSprite.svg#ico-dart"></use>
           </svg>
           <p class="counter__number">
-            <span data-from="0" data-to="40" class="count__it">0</span> +
+            <span data-from="0" data-to="50" class="count__it">0</span> +
           </p>
           <p class="counter__title">Landing pages</p>
         </div>
@@ -144,14 +150,14 @@
           <svg class="counter__image">
             <use xlink:href="/img/InlineSprite.svg#ico-devices"></use>
           </svg>
-          <p class="counter__number"><span data-from="0" data-to="230" class="count__it">0</span> +</p>
+          <p class="counter__number"><span data-from="0" data-to="330" class="count__it">0</span> +</p>
           <p class="counter__title">Upravených stránek</p>
         </div>
         <div class="counterBox">
           <svg class="counter__image">
             <use xlink:href="/img/InlineSprite.svg#ico-coffe"></use>
           </svg>
-          <p class="counter__number"><span data-from="0" data-to="2400" class="count__it">0</span> +</p>
+          <p class="counter__number"><span data-from="0" data-to="3400" class="count__it">0</span> +</p>
           <p class="counter__title">Cups Of Coffee</p>
         </div>
       </div>
@@ -608,9 +614,7 @@
       <h2>
         Vzdělávání a oblíbené zdroje
       </h2>
-      <div class="relative max-w-full pl-4 md:pl-0 lg:max-w-[calc(100%-7rem)] xl:max-w-[calc(100%-4rem)] mx-auto">
-
-
+      <div class="relative max-w-full px-4 sm:px-0 lg:max-w-[calc(100%-7rem)] xl:max-w-[calc(100%-4rem)] mx-auto">
         <!-- glide slider -->
         <div class="glide mt-9 lg:mt-28">
           <div class="glide__track lg:max-w-[94%] lg:mx-auto" data-glide-el="track">
@@ -740,7 +744,7 @@
     </section>
     <!-- /LEARNING AND COURSES -->
     <!-- SECTION WITH CONTACT FORM -->
-    <section class="px-4 md:px-0" id="contact">
+    <!-- <section class="px-4 md:px-0" id="contact">
       <h2>
         Napište mi
       </h2>
@@ -802,10 +806,10 @@
             <div class="mt-1 text-sm font-bold text-red-500 empty-feedback invalid-feedback">
               Zadejte text zprávy
             </div>
-            <!-- <! -- Hcaptcha -->
-            <!-- <div class="h-captcha" data-hl="cs" data-captcha="true"></div> -->
-            <!-- <! -- /Hcaptcha -->
-            <p class="mt-2">
+             <! -- Hcaptcha -->
+    <!-- <div class="h-captcha" data-hl="cs" data-captcha="true"></div> -->
+    <!-- <! -- /Hcaptcha -->
+    <!-- <p class="mt-2">
               Odesláním formuláře souhlasíte
               <a class="active__link" data-open-dialog="zpracovaniUdaju" href="#">se zpracováním osobních údajů</a>. 💭
             </p>
@@ -825,7 +829,7 @@
           <p>Jiné údaje než výše uvedené nezpracovávám. Vaše osobní údaje nebudou nikdy poskytnuty třetí straně.</p>
         </dialog>
       </div>
-    </section>
+    </section> -->
     <!-- /SECTION WITH CONTACT FORM -->
   </main>
   <footer class="main__footer">
